@@ -1,0 +1,34 @@
+.intro, .intro2 {
+}
+
+.intro2 {
+    background-color: #000;
+    color: #fff;
+}
+
+.intro .container, .intro2 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    padding: 100px 24px;
+}
+
+.intro #intro_title, .intro2 .intro_title{
+    color: rgba(254, 152, 0, 0.8);
+    opacity: 0;
+}
+
+.intro #intro_text, .intro2 .intro_text {
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 767px) {
+    .intro, .intro2{
+        width: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+.design_section {
+    min-height: 100vh;
+    /* padding: 10vh 10vw; */
+    background-color: #fff;
+    width: 80%;
+    justify-self: center;
+}
+
+.img_preview {
+    margin: 4vh 0px 0px;
+    filter: grayscale();
+    display: block;
+}
+
+.img_preview:hover {
+    cursor: pointer;
+    filter: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10vh 5vw;
+    cursor: pointer;
+    display: none;
+    z-index: 20;
+}
+
+.overlay img{
+    display: flex;
+    justify-self: center;
+}

@@ -1,0 +1,42 @@
+
+.certifications-container {
+    max-width: 90% !important;
+    height: auto;
+}
+
+.certifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.certifications .certification-image {
+    width: 10%;
+    padding: 24px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    aspect-ratio: 1/1;
+}
+
+.certifications .certification-content {
+    width: 80%;
+}
+
+.certifications .certification-content .carousel-inner {
+    padding: 20px;
+}
+
+.certifications .certification-content .carousel-inner label {
+    color: #555 !important;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+}
+
+.certifications img {
+    box-shadow: 10px 10px 10px #555;
+}

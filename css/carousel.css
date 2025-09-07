@@ -1,0 +1,11 @@
+
+.main-carousel .carouselBtn:hover{
+    box-shadow: inset 0px 0px 10px #000;
+}
+
+.main-carousel .carouselBtn{
+    width: 40px;
+    height: 40px;
+    padding: 40px;
+    border-radius: 50%;
+}
