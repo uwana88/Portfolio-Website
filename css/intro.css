@@ -1,4 +1,4 @@
-.intro, .intro2 {
+.intro, .intro2, .contact1 {
 }
 
 .intro2 {
@@ -6,7 +6,7 @@
     color: #fff;
 }
 
-.intro .container, .intro2 .container {
+.intro .container, .intro2 .container, .contact1 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,18 +17,30 @@
     padding: 100px 24px;
 }
 
-.intro #intro_title, .intro2 .intro_title{
-    color: rgba(254, 152, 0, 0.8);
+.contact1 .container {
+    padding: 100px 24px 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .intro .container, .intro2 .container, .contact1 .container {
+        width: 100%;
+        padding: 80px 24px;
+    }
+}
+
+.intro #intro_title, .intro2 .intro_title, .contact1 .contact1_title{
+    /* color: rgba(254, 152, 0, 0.8); */
+    color: #ffd700;
     opacity: 0;
 }
 
-.intro #intro_text, .intro2 .intro_text {
+.intro #intro_text, .intro2 .intro_text, .contact1 .contact1_text {
     opacity: 0;
 }
 
 
 @media screen and (max-width: 767px) {
-    .intro, .intro2{
+    .intro, .intro2, .contact1 {
         width: 100%;
     }
 }

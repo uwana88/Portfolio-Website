@@ -17,6 +17,27 @@ label{
     font-size: 1.4em;
 }
 
+button, .btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 0;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 1.2rem;
+}
+button:hover {
+    background: #333;
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
 @media screen and (max-width: 1023px) {
     p {
         font-size: 1em;

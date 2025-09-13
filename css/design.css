@@ -1,8 +1,8 @@
 .design_section {
     min-height: 100vh;
     /* padding: 10vh 10vw; */
-    background-color: #fff;
-    width: 80%;
+    background-color: #000;
+    width: 100%;
     justify-self: center;
 }
 

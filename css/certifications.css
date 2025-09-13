@@ -1,6 +1,6 @@
 
 .certifications-container {
-    max-width: 90% !important;
+    max-width: 100% !important;
     height: auto;
 }
 
@@ -21,6 +21,14 @@
     aspect-ratio: 1/1;
 }
 
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
 .certifications .certification-content {
     width: 80%;
 }
@@ -39,4 +47,39 @@
 
 .certifications img {
     box-shadow: 10px 10px 10px #555;
+}
+
+.certifications .carousel-control-prev,
+.certifications .carousel-control-next {
+    background-color: #000;
+    height: 25%;
+    padding: 5px;
+    width: auto;
+    margin: 8.5% -20px;
+}
+
+@media (max-width: 767px) {
+    .certifications {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .certifications .certification-image {
+        width: 25%;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .certifications .carousel-control-prev,
+    .certifications .carousel-control-next {
+
+        height: 50%;
+        margin: 15% -20px;
+    }
 }

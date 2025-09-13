@@ -1,17 +1,18 @@
 
 .textEditor {
-    height: 100vh;
+    height: auto;
     display: flex;
-    background-image: linear-gradient(to left, #ff5e00, #ffb400);
+    background-image: linear-gradient(to left, #ffd700, #ff5e00);
 }
 
 .textEditor .content {
-    width: 50%;
+    width: 60%;
     padding: 20px;
+    align-content: center;
 }
 
 .textEditor .display {
-    width: 50%;
+    width: 35%;
     padding: 40px 40px;
     text-align: center;
     display: flex;
@@ -23,12 +24,92 @@
     text-shadow: 0px 0px 12px #aaa;
 }
 
+@media screen and (max-width: 767px) {
+    .textEditor {
+        flex-direction: column;
+    }
+
+    .textEditor .content {
+        width: 100%;
+    }
+
+    .textEditor .display {
+        width: 100%;
+    }
+}
+
+.textEditor .display div {
+    display: flex;
+    flex-direction: column;
+}
+
+.textEditor .content #form,
+.textEditor .content .submit_message {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    background: #f8f9fa;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.textEditor .content h2 {
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.textEditor .content input[type="text"],
+.textEditor .content input[type="email"],
+.textEditor .content input[type="password"],
+.textEditor .content input[type="tel"] {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border-color 0.2s;
+    margin: 0px 0px 0.8rem 0px;
+}
+
+.textEditor .content input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.textEditor .content button[type="button"],
+.textEditor .content .submit_message button,
 .textEditor .display button {
-    width: 50%;
-    padding: 12px 24px;
-    background-color: #000;
+    background: #000;
     color: #fff;
-    border: solid 1px #fff;
-    border-radius: 8px;
-    display: block;
+    border: none;
+    padding: 0.8rem 0;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 1.2rem;
+}
+
+.textEditor .content button[type="button"]:hover,
+.textEditor .content .submit_message button:hover,
+.textEditor .display button:hover {
+    background: #333;
+}
+
+.textEditor .content button[type="button"]:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.textEditor .content label {
+    font-size: 0.8rem;
+    min-height: 1.2rem;
+}
+
+.textEditor .content .submit_message {
+    text-align: center;
+    display: none;
 }

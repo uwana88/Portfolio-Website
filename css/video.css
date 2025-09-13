@@ -11,3 +11,28 @@
     height: 100%;
     object-fit: cover;
 }
+
+.video .btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 1.2rem;
+    padding: 0.8rem 100px;
+    background-color: #ffd700;
+    color: #000;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s;
+}
+.video .btn:hover {
+    background-color: #ff5e00;
+}
+
+@media screen and (max-width: 767px) {
+    .video .btn {
+        padding: 0.8rem 24px;
+        font-size: 1rem;
+    }
+}
