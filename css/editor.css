@@ -1,13 +1,16 @@
+.textEditor-wrapper {
+    text-align: center;
+    background-image: linear-gradient(to left, #ffd700, #ff5e00);
+}
 
 .textEditor {
     height: auto;
     display: flex;
-    background-image: linear-gradient(to left, #ffd700, #ff5e00);
 }
 
 .textEditor .content {
     width: 60%;
-    padding: 20px;
+    padding: 80px 24px 24px;
     align-content: center;
 }
 

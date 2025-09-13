@@ -359,7 +359,7 @@
         <div class="container my-5 certifications-container desktop">
             <div class="certifications">
                 <img src="img/logos/LinkedIn-Logo.wine.svg" alt="" class="certification-image">
-                <div class="certification-content">
+                <div class="certification-content certification-content2">
                     <div id="aboutCarousel2" class="carousel slide" data-ride="carousel" data-interval="5000">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -476,7 +476,9 @@
                     </div>
                 </div>
             </div>
-    
+            <a target="_blank" href="https://github.com/uwana88/Certificates">
+                <button type="submit" style="margin-top: 0px !important;">Vew All</button>
+            </a>
         </div>
     </section>
     <section>
@@ -579,7 +581,7 @@
     <section>
         <div class="row design_section">
             <div class="col-md-12">
-                <div class="row" style="margin:10vh 0px 0px; user-select: none; padding:0px;">
+                <div class="row" style="user-select: none; padding:0px;">
                     <img src="img/privew1.png" class="col-md-4 img_preview img-responsive" />
                     <img src="img/privew2.png" class="col-md-4 img_preview img-responsive" />
                     <img src="img/privew3.png" class="col-md-4 img_preview img-responsive" />
@@ -589,7 +591,7 @@
                     <img src="img/privew5.png" class="col-md-4 img_preview img-responsive" />
                     <img src="img/privew4.png" class="col-md-4 img_preview img-responsive" />
                 </div>
-                <div class="row" style="margin:0px 0px 10vh; user-select: none; padding:0px;">
+                <div class="row" style="user-select: none; padding:0px;">
                     <img src="img/privew7.png" class="col-md-4 img_preview img-responsive" />
                     <img src="img/privew8.png" class="col-md-4 img_preview img-responsive" />
                     <img src="img/privew9.png" class="col-md-4 img_preview img-responsive" />
@@ -598,40 +600,45 @@
         </div>
     </section>
     <section>
-        <div class="textEditor">
-            <div class="content">
-                <form action="#" method="POST" id="form">
-                    <h2 id="textEditor_title">Form Validation</h2>
-                    <label id="form_name_label" for="form_name"></label>
-                    <input onblur="validateForm('name')" onchange="validateForm('name')" id="form_name" type="text" name="name" placeholder="Name *" required>
-                    <label id="form_email_label" for="form_email"></label>
-                    <input onblur="validateForm('email')" onchange="validateForm('email')" id="form_email" type="email" name="email" placeholder="Email *" required>
-                    <label id="form_number_label" for="form_number"></label>
-                    <input onblur="validateForm('num')" onchange="validateForm('num')" id="form_number" type="tel" name="number" placeholder="Phone Number *" required>
-                    <label id="form_pass_label" for="form_pass"></label>
-                    <input onblur="validateForm('pass')" onchange="validateForm('pass')" id="form_pass" type="password" name="pass" placeholder="Password *" required>
-                    <label id="form_pass_c_label" for="form_pass_c"></label>
-                    <input onblur="validateForm('pass_c')" oninput="validateForm('pass_c')" id="form_pass_c" type="password" name="pass_c" placeholder="Confirm Password *" required>
-                    <button onclick="send()" id="form_button" type="button" disabled>Send Message</button>
-                </form>
-                <div class="submit_message" id="submit_message">
-                    <h2>Form Submited</h2>
-                    <p>Thank you for compleating this form. This is for testing purposes so your information will not be saved</p>
-                    <button onclick="closeMessage()">Close</button>
+        <div class="textEditor-wrapper">
+            <div class="textEditor">
+                <div class="content">
+                    <form action="#" method="POST" id="form">
+                        <h2 id="textEditor_title">Form Validation</h2>
+                        <label id="form_name_label" for="form_name"></label>
+                        <input onblur="validateForm('name')" onchange="validateForm('name')" id="form_name" type="text" name="name" placeholder="Name *" required>
+                        <label id="form_email_label" for="form_email"></label>
+                        <input onblur="validateForm('email')" onchange="validateForm('email')" id="form_email" type="email" name="email" placeholder="Email *" required>
+                        <label id="form_number_label" for="form_number"></label>
+                        <input onblur="validateForm('num')" onchange="validateForm('num')" id="form_number" type="tel" name="number" placeholder="Phone Number *" required>
+                        <label id="form_pass_label" for="form_pass"></label>
+                        <input onblur="validateForm('pass')" onchange="validateForm('pass')" id="form_pass" type="password" name="pass" placeholder="Password *" required>
+                        <label id="form_pass_c_label" for="form_pass_c"></label>
+                        <input onblur="validateForm('pass_c')" oninput="validateForm('pass_c')" id="form_pass_c" type="password" name="pass_c" placeholder="Confirm Password *" required>
+                        <button onclick="send()" id="form_button" type="button" disabled>Send Message</button>
+                    </form>
+                    <div class="submit_message" id="submit_message">
+                        <h2>Form Submited</h2>
+                        <p>Thank you for compleating this form. This is for testing purposes so your information will not be saved</p>
+                        <button onclick="closeMessage()">Close</button>
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="display_text">
+                        <h2 id="textEditor_title">Example Component</h2>
+                        <p id="textEditor_text">
+                            This is a simple component that has been created and adapted for multiple frameworks
+                        </p>
+                        <button>Download Vanilla Code</button>
+                        <button>Download Angular.js</button>
+                        <button>Download React.js</button>
+                        <button>Download Vue.js</button>
+                    </div>
                 </div>
             </div>
-            <div class="display">
-                <div class="display_text">
-                    <h2 id="textEditor_title">Example Component</h2>
-                    <p id="textEditor_text">
-                        This is a simple component that has been created and adapted for multiple frameworks
-                    </p>
-                    <button>Download Vanilla Code</button>
-                    <button>Download Angular.js</button>
-                    <button>Download React.js</button>
-                    <button>Download Vue.js</button>
-                </div>
-            </div>
+            <a target="_blank" href="https://github.com/uwana88/Certificates">
+                <button type="submit" style="margin: 24px auto 80px !important;"><i class="fa fa-github" style="font-size: 2rem; color: #fff;"></i> See More Projects</button>
+            </a>
         </div>
     </section>
 
@@ -703,7 +710,7 @@
         </div>
     </section>
 
-    
+    <!-- Footer Section -->
     <footer style="background: #000; color: #fff; padding: 2rem 0; text-align: center;">
         <div class="container">
             <p style="margin: 0;">&copy; 2024 Bobby Jackson. All rights reserved.</p>
