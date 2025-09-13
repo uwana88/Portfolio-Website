@@ -7,8 +7,8 @@ $(document).ready(function () {
 
         if (elementBottom > viewportTop && elementTop < viewportBottom) {
             if ($(element1).css('opacity') !== '1' || $(element2).css('opacity') !== '1') {
-                $(element1).stop(true).animate({ opacity: '1' }, 800, function () {
-                    $(element2).stop(true).animate({ opacity: '1' }, 800);
+                $(element1).stop(true).animate({ opacity: '1' }, 300, function () {
+                    $(element2).stop(true).animate({ opacity: '1' }, 600);
                 });
             }
         }
