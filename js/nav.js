@@ -6,6 +6,7 @@ const sections = [
     { id: "about_section", nav: "about_nav" },
     { id: "skills_section", nav: "skills_nav" },
     { id: "certification_section", nav: "certification_nav" },
+    { id: "showcase_section", nav: "showcase_nav" },
     { id: "cv_section", nav: "cv_nav" },
     { id: "contact_section", nav: "contact_nav" }
 ];

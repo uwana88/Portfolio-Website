@@ -22,6 +22,5 @@ $(document).ready(function () {
         appear('#contact_text', '#contact_title', '#contact_text');
     });
 
-    // ✅ Run once immediately to catch elements already in view
     $(window).trigger('scroll');
 });
