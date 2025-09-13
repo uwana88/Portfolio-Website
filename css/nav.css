@@ -20,6 +20,10 @@
     height: 80px;
 }
 
+.nav a{
+    display: flex;
+}
+
 .nav h1{
     margin: 0;
     display: flex;
@@ -39,14 +43,15 @@
     display: flex;
     margin: 0 12px;
     list-style: none;
+    cursor: pointer;
 }
 
 .nav .nav-bar a{
     color: #ccc;
     text-decoration: none;
+    font-weight: bolder;
 }.nav .nav-bar a:hover {
-    color: #eee;
-    /* font-weight: bolder; */
+    color: #ffd700;
 }
 
 .nav_active{
