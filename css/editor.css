@@ -100,7 +100,8 @@
 .textEditor .content button[type="button"]:hover,
 .textEditor .content .submit_message button:hover,
 .textEditor .display button:hover {
-    background: #333;
+    background-image: linear-gradient(to right, #ff5e00, #ffd700);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .textEditor .content button[type="button"]:disabled {

@@ -31,11 +31,52 @@ button, .btn {
 }
 button:hover {
     background: #333;
+    background-image: linear-gradient(to right, #ff5e00, #ffd700);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 button:disabled {
     background: #aaa;
     cursor: not-allowed;
+}
+
+.btn_gold {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 1.2rem;
+    padding: 0.8rem 100px;
+    background-color: #ffd700;
+    color: #000;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s;
+}
+
+.btn_gold2 {
+    z-index: 2;
+    font-size: 1.2rem;
+    padding: 0.8rem 100px;
+    background-color: #ffd700;
+    color: #000;
+    margin-top: 80px;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s;
+}
+
+.btn_gold:hover, .btn_gold2:hover {
+    background-image: linear-gradient(to left, #ff5e00, #ffd700);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 767px) {
+    .btn_gold {
+        padding: 0.8rem 24px;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 1023px) {
