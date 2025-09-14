@@ -83,7 +83,7 @@
 
 .textEditor .content button[type="button"],
 .textEditor .content .submit_message button,
-.textEditor .display button {
+.textEditor .display a button {
     background: #000;
     color: #fff;
     border: none;
@@ -94,6 +94,7 @@
     cursor: pointer;
     transition: background 0.2s;
     margin-top: 1.2rem;
+    width: 100%;
 }
 
 .textEditor .content button[type="button"]:hover,
