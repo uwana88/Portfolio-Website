@@ -13,6 +13,10 @@
     display: block;
 }
 
+.img_preview2 {
+    margin-bottom: 4vh;
+}
+
 .img_preview:hover {
     cursor: pointer;
     filter: none;

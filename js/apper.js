@@ -13,6 +13,7 @@ $(document).ready(function () {
             }
         }
     }
+    
 
     $(window).on('scroll resize', function () {
         appear('#intro_text', '#intro_title', '#intro_text');
