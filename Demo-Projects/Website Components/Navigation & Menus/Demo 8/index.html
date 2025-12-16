@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Corporate Navbar</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="corporate-navbar" id="corporateNavbar">
+        <div class="navbar-container">
+            <!-- Brand/Logo -->
+            <div class="navbar-brand">
+                <a href="#" class="brand-link">
+                    <div class="brand-logo">
+                        <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#0EA5E9"/>
+                            <path d="M12 12h16v4H12v-4zm0 6h16v4H12v-4zm0 6h12v4H12v-4z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">CorpTech</span>
+                        <span class="brand-tagline">Enterprise Solutions</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <div class="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <span class="nav-text">Home</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item has-mega" id="solutionsMega">
+                        <a href="#" class="nav-link mega-trigger">
+                            <span class="nav-text">Solutions</span>
+                            <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none">
+                                <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <div class="nav-indicator"></div>
+                        </a>
+                        
+                        <!-- Mega Menu -->
+                        <div class="mega-dropdown">
+                            <div class="mega-container">
+                                <div class="mega-content">
+                                    <div class="mega-section">
+                                        <div class="section-header">
+                                            <h4>Enterprise Software</h4>
+                                            <p>Scalable solutions for large organizations</p>
+                                        </div>
+                                        <div class="section-links">
+                                            <a href="#" class="mega-link">
+                                                <div class="link-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                                                        <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="link-content">
+                                                    <strong>CRM Platform</strong>
+                                                    <span>Customer relationship management</span>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="mega-link">
+                                                <div class="link-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                        <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="link-content">
+                                                    <strong>Analytics Suite</strong>
+                                                    <span>Business intelligence and reporting</span>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="mega-link">
+                                                <div class="link-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                                        <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                                                        <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="link-content">
+                                                    <strong>Digital Workspace</strong>
+                                                    <span>Collaborative tools and platform</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mega-section">
+                                        <div class="section-header">
+                                            <h4>Cloud Services</h4>
+                                            <p>Secure and scalable cloud infrastructure</p>
+                                        </div>
+                                        <div class="section-links">
+                                            <a href="#" class="mega-link">
+                                                <div class="link-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" stroke="currentColor" stroke-width="2"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="link-content">
+                                                    <strong>Cloud Storage</strong>
+                                                    <span>Secure file storage and sharing</span>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="mega-link">
+                                                <div class="link-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                                        <line x1="6" y1="6" x2="6.01" y2="6" stroke="currentColor" stroke-width="2"/>
+                                                        <line x1="6" y1="18" x2="6.01" y2="18" stroke="currentColor" stroke-width="2"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="link-content">
+                                                    <strong>Infrastructure</strong>
+                                                    <span>Managed hosting and servers</span>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="mega-link">
+                                                <div class="link-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                                        <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1" stroke="currentColor" stroke-width="2"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="link-content">
+                                                    <strong>API Gateway</strong>
+                                                    <span>Enterprise API management</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mega-highlight">
+                                        <div class="highlight-content">
+                                            <div class="highlight-badge">Featured</div>
+                                            <h4>Enterprise Security Suite</h4>
+                                            <p>Advanced threat protection, compliance monitoring, and identity management for enterprise environments.</p>
+                                            <a href="#" class="highlight-cta">
+                                                <span>Learn More</span>
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                                    <polyline points="7,17 17,7" stroke="currentColor" stroke-width="2"/>
+                                                    <polyline points="7,7 17,7 17,17" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Industries</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Resources</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">About</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="navbar-actions">
+                <div class="action-group">
+                    <button class="search-toggle" id="searchToggle" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="account-dropdown" id="accountDropdown">
+                        <button class="account-btn" id="accountBtn">
+                            <div class="account-avatar">
+                                <span class="avatar-text">JD</span>
+                            </div>
+                            <div class="account-info">
+                                <span class="account-name">John Doe</span>
+                                <span class="account-role">Administrator</span>
+                            </div>
+                            <svg class="account-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        
+                        <div class="account-menu">
+                            <div class="menu-section">
+                                <a href="#" class="menu-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2"/>
+                                        <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                    <span>Profile</span>
+                                </a>
+                                
+                                <a href="#" class="menu-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                    <span>Settings</span>
+                                </a>
+                                
+                                <a href="#" class="menu-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                    <span>Help Center</span>
+                                </a>
+                            </div>
+                            
+                            <div class="menu-divider"></div>
+                            
+                            <div class="menu-section">
+                                <a href="#" class="menu-item danger">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4m7 14l5-5-5-5m5 5H9" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                    <span>Sign Out</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-group">
+                    <a href="#" class="contact-btn">Contact Sales</a>
+                    <a href="#" class="demo-btn">
+                        <span>Request Demo</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <polyline points="9,18 15,12 9,6" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <div class="menu-icon">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-content">
+                <div class="mobile-header">
+                    <div class="mobile-brand">
+                        <div class="brand-logo">
+                            <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                                <rect width="40" height="40" rx="8" fill="#0EA5E9"/>
+                                <path d="M12 12h16v4H12v-4zm0 6h16v4H12v-4zm0 6h12v4H12v-4z" fill="white"/>
+                            </svg>
+                        </div>
+                        <span class="mobile-brand-text">CorpTech</span>
+                    </div>
+                    
+                    <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2"/>
+                            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="mobile-nav">
+                    <a href="#" class="mobile-nav-item active">
+                        <span class="mobile-nav-text">Home</span>
+                    </a>
+                    
+                    <div class="mobile-mega-item" id="mobileSolutionsMega">
+                        <button class="mobile-mega-trigger" id="mobileSolutionsTrigger">
+                            <span class="mobile-nav-text">Solutions</span>
+                            <svg class="mobile-mega-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <polyline points="9,18 15,12 9,6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        
+                        <div class="mobile-mega-content" id="mobileSolutionsContent">
+                            <div class="mobile-mega-section">
+                                <h5>Enterprise Software</h5>
+                                <a href="#" class="mobile-mega-link">CRM Platform</a>
+                                <a href="#" class="mobile-mega-link">Analytics Suite</a>
+                                <a href="#" class="mobile-mega-link">Digital Workspace</a>
+                            </div>
+                            
+                            <div class="mobile-mega-section">
+                                <h5>Cloud Services</h5>
+                                <a href="#" class="mobile-mega-link">Cloud Storage</a>
+                                <a href="#" class="mobile-mega-link">Infrastructure</a>
+                                <a href="#" class="mobile-mega-link">API Gateway</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="mobile-nav-item">
+                        <span class="mobile-nav-text">Industries</span>
+                    </a>
+                    
+                    <a href="#" class="mobile-nav-item">
+                        <span class="mobile-nav-text">Resources</span>
+                    </a>
+                    
+                    <a href="#" class="mobile-nav-item">
+                        <span class="mobile-nav-text">About</span>
+                    </a>
+                </div>
+                
+                <div class="mobile-footer">
+                    <div class="mobile-user">
+                        <div class="mobile-user-avatar">
+                            <span class="mobile-avatar-text">JD</span>
+                        </div>
+                        <div class="mobile-user-info">
+                            <span class="mobile-user-name">John Doe</span>
+                            <span class="mobile-user-role">Administrator</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mobile-actions">
+                        <a href="#" class="mobile-contact-btn">Contact Sales</a>
+                        <a href="#" class="mobile-demo-btn">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <div class="search-header">
+                    <h2>Search Enterprise Solutions</h2>
+                    <button class="search-close" id="searchClose" aria-label="Close search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2"/>
+                            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="search-box">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Search products, solutions, or documentation..." id="searchInput" autocomplete="off">
+                </div>
+                
+                <div class="search-categories">
+                    <h3>Popular Categories</h3>
+                    <div class="category-grid">
+                        <button class="category-item">
+                            <div class="category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                                    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>CRM Solutions</span>
+                        </button>
+                        
+                        <button class="category-item">
+                            <div class="category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>Cloud Services</span>
+                        </button>
+                        
+                        <button class="category-item">
+                            <div class="category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>Analytics</span>
+                        </button>
+                        
+                        <button class="category-item">
+                            <div class="category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>Security</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

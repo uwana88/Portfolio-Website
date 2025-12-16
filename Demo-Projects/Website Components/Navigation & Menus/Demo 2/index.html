@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Logo Navbar</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="centered-navbar">
+        <div class="navbar-container">
+            <!-- Left Navigation -->
+            <div class="nav-section nav-left">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown" id="leftDropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Services
+                            <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6">
+                                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Web Design</a>
+                            <a href="#" class="dropdown-item">Development</a>
+                            <a href="#" class="dropdown-item">SEO</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Centered Logo -->
+            <div class="nav-center">
+                <a href="#" class="logo-link">
+                    <div class="logo-container">
+                        <img src="https://via.placeholder.com/50x50/FF6B6B/FFFFFF?text=C" alt="Logo" class="logo-image">
+                        <div class="logo-text">
+                            <span class="brand-name">Creative</span>
+                            <span class="brand-tagline">Studio</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Right Navigation -->
+            <div class="nav-section nav-right">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- CTA -->
+                <div class="nav-actions">
+                    <a href="#" class="cta-btn">Get Quote</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="#" class="mobile-nav-link active">Home</a>
+                <a href="#" class="mobile-nav-link">About</a>
+                
+                <div class="mobile-dropdown">
+                    <a href="#" class="mobile-nav-link dropdown-trigger" id="mobileDropdownTrigger">
+                        Services
+                        <svg class="mobile-dropdown-icon" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M3 5l3 3 3-3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </a>
+                    <div class="mobile-dropdown-content" id="mobileDropdownContent">
+                        <a href="#" class="mobile-dropdown-link">Web Design</a>
+                        <a href="#" class="mobile-dropdown-link">Development</a>
+                        <a href="#" class="mobile-dropdown-link">SEO</a>
+                    </div>
+                </div>
+                
+                <a href="#" class="mobile-nav-link">Portfolio</a>
+                <a href="#" class="mobile-nav-link">Contact</a>
+                
+                <div class="mobile-cta-section">
+                    <a href="#" class="mobile-cta-btn">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Accounting & Tax Services - Professional Financial Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="calculator-grid">
+                        <div class="calc-button"></div>
+                        <div class="calc-button"></div>
+                        <div class="calc-button"></div>
+                        <div class="calc-button active"></div>
+                    </div>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Precision</span>
+                    <span class="logo-sub">Accounting & Tax</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Free Consultation</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-main">
+                    <div class="hero-badge">
+                        <span class="badge-icon">📊</span>
+                        Certified Public Accountants
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-accent">Precision</span> in Every Number,
+                        <span class="title-accent">Excellence</span> in Every Service
+                    </h1>
+                    <p class="hero-description">
+                        Professional accounting, tax preparation, and financial consulting services
+                        for businesses and individuals. Over 20 years of experience delivering
+                        accurate, timely, and strategic financial solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Schedule Consultation</a>
+                        <a href="#services" class="btn-secondary">View Services</a>
+                    </div>
+                </div>
+
+                <div class="hero-dashboard">
+                    <div class="dashboard-header">
+                        <h3>Financial Dashboard</h3>
+                        <div class="dashboard-controls">
+                            <button class="control-btn active">YTD</button>
+                            <button class="control-btn">Q4</button>
+                            <button class="control-btn">Q3</button>
+                        </div>
+                    </div>
+
+                    <div class="financial-grid">
+                        <div class="financial-card positive">
+                            <div class="card-header">
+                                <span class="card-title">Revenue</span>
+                                <span class="card-trend up">↗ 12.5%</span>
+                            </div>
+                            <div class="card-value">$847,250</div>
+                            <div class="card-subtitle">Year to Date</div>
+                        </div>
+
+                        <div class="financial-card neutral">
+                            <div class="card-header">
+                                <span class="card-title">Expenses</span>
+                                <span class="card-trend down">↘ 8.2%</span>
+                            </div>
+                            <div class="card-value">$523,180</div>
+                            <div class="card-subtitle">Operational Costs</div>
+                        </div>
+
+                        <div class="financial-card positive">
+                            <div class="card-header">
+                                <span class="card-title">Net Profit</span>
+                                <span class="card-trend up">↗ 24.7%</span>
+                            </div>
+                            <div class="card-value">$324,070</div>
+                            <div class="card-subtitle">After Tax</div>
+                        </div>
+
+                        <div class="financial-card info">
+                            <div class="card-header">
+                                <span class="card-title">Tax Savings</span>
+                                <span class="card-trend neutral">→ 0.5%</span>
+                            </div>
+                            <div class="card-value">$68,450</div>
+                            <div class="card-subtitle">Optimized Strategy</div>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <span>Monthly Performance</span>
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color revenue"></span>
+                                    Revenue
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color expenses"></span>
+                                    Expenses
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-bars">
+                            <div class="chart-month">
+                                <div class="bar-group">
+                                    <div class="bar revenue" data-value="85"></div>
+                                    <div class="bar expenses" data-value="52"></div>
+                                </div>
+                                <span class="month-label">Jan</span>
+                            </div>
+                            <div class="chart-month">
+                                <div class="bar-group">
+                                    <div class="bar revenue" data-value="92"></div>
+                                    <div class="bar expenses" data-value="58"></div>
+                                </div>
+                                <span class="month-label">Feb</span>
+                            </div>
+                            <div class="chart-month">
+                                <div class="bar-group">
+                                    <div class="bar revenue" data-value="78"></div>
+                                    <div class="bar expenses" data-value="49"></div>
+                                </div>
+                                <span class="month-label">Mar</span>
+                            </div>
+                            <div class="chart-month">
+                                <div class="bar-group">
+                                    <div class="bar revenue" data-value="96"></div>
+                                    <div class="bar expenses" data-value="61"></div>
+                                </div>
+                                <span class="month-label">Apr</span>
+                            </div>
+                            <div class="chart-month">
+                                <div class="bar-group">
+                                    <div class="bar revenue" data-value="89"></div>
+                                    <div class="bar expenses" data-value="55"></div>
+                                </div>
+                                <span class="month-label">May</span>
+                            </div>
+                            <div class="chart-month">
+                                <div class="bar-group">
+                                    <div class="bar revenue" data-value="100"></div>
+                                    <div class="bar expenses" data-value="63"></div>
+                                </div>
+                                <span class="month-label">Jun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Professional Services</span>
+                <h2 class="section-title">Comprehensive Financial Solutions</h2>
+                <p class="section-subtitle">
+                    From bookkeeping to complex tax strategies, we provide the full spectrum
+                    of accounting services your business needs to thrive.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">📚</div>
+                        <h3 class="category-title">Accounting Services</h3>
+                        <p class="category-description">Core financial management and reporting</p>
+                    </div>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <span class="service-name">Monthly Bookkeeping</span>
+                            <span class="service-price">$299/mo</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Financial Statements</span>
+                            <span class="service-price">$450/qtr</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Accounts Payable/Receivable</span>
+                            <span class="service-price">$199/mo</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Payroll Processing</span>
+                            <span class="service-price">$25/employee</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">QuickBooks Setup & Training</span>
+                            <span class="service-price">$500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category featured">
+                    <div class="category-header">
+                        <div class="category-icon">📋</div>
+                        <h3 class="category-title">Tax Services</h3>
+                        <p class="category-description">Strategic tax planning and preparation</p>
+                    </div>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <span class="service-name">Individual Tax Returns</span>
+                            <span class="service-price">$175</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Business Tax Returns</span>
+                            <span class="service-price">$599</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Tax Planning Strategy</span>
+                            <span class="service-price">$299/hr</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">IRS Representation</span>
+                            <span class="service-price">$399/hr</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Multi-State Tax Filing</span>
+                            <span class="service-price">$125/state</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">💼</div>
+                        <h3 class="category-title">Business Consulting</h3>
+                        <p class="category-description">Strategic financial guidance and planning</p>
+                    </div>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <span class="service-name">Financial Analysis</span>
+                            <span class="service-price">$200/hr</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Budget Planning</span>
+                            <span class="service-price">$450</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Cash Flow Management</span>
+                            <span class="service-price">$350</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Business Entity Setup</span>
+                            <span class="service-price">$750</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Financial Auditing</span>
+                            <span class="service-price">$300/hr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-cta">
+                <div class="cta-content">
+                    <h3>Need a custom solution?</h3>
+                    <p>Every business is unique. Let's discuss your specific financial needs and create a tailored
+                        service package.</p>
+                    <a href="#contact" class="btn-outline">Get Custom Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Dashboard -->
+    <section class="dashboard-section" id="dashboard">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Client Portal</span>
+                <h2 class="section-title">Real-Time Financial Insights</h2>
+                <p class="section-subtitle">
+                    Track your financial performance with our comprehensive dashboard and reporting tools.
+                </p>
+            </div>
+
+            <div class="dashboard-showcase">
+                <div class="dashboard-nav">
+                    <button class="dashboard-tab active" data-tab="overview">Overview</button>
+                    <button class="dashboard-tab" data-tab="reports">Reports</button>
+                    <button class="dashboard-tab" data-tab="tax">Tax Center</button>
+                    <button class="dashboard-tab" data-tab="documents">Documents</button>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="tab-content active" id="overview">
+                        <div class="overview-grid">
+                            <div class="overview-card">
+                                <div class="card-icon">💰</div>
+                                <div class="card-content">
+                                    <h4>Current Assets</h4>
+                                    <div class="amount positive">$1,247,890</div>
+                                    <div class="comparison">+15.2% vs last month</div>
+                                </div>
+                            </div>
+
+                            <div class="overview-card">
+                                <div class="card-icon">📈</div>
+                                <div class="card-content">
+                                    <h4>Monthly Revenue</h4>
+                                    <div class="amount positive">$184,750</div>
+                                    <div class="comparison">+8.7% vs last month</div>
+                                </div>
+                            </div>
+
+                            <div class="overview-card">
+                                <div class="card-icon">📊</div>
+                                <div class="card-content">
+                                    <h4>Profit Margin</h4>
+                                    <div class="amount neutral">32.4%</div>
+                                    <div class="comparison">+2.1% vs last month</div>
+                                </div>
+                            </div>
+
+                            <div class="overview-card">
+                                <div class="card-icon">🎯</div>
+                                <div class="card-content">
+                                    <h4>Tax Efficiency</h4>
+                                    <div class="amount positive">18.5%</div>
+                                    <div class="comparison">Effective tax rate</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="data-table-container">
+                            <div class="table-header">
+                                <h4>Recent Transactions</h4>
+                                <button class="table-action">View All</button>
+                            </div>
+                            <div class="data-table">
+                                <div class="table-header-row">
+                                    <div class="table-cell header">Date</div>
+                                    <div class="table-cell header">Description</div>
+                                    <div class="table-cell header">Category</div>
+                                    <div class="table-cell header">Amount</div>
+                                    <div class="table-cell header">Status</div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="table-cell">Mar 15, 2025</div>
+                                    <div class="table-cell">Office Equipment Purchase</div>
+                                    <div class="table-cell">Equipment</div>
+                                    <div class="table-cell amount negative">-$3,450.00</div>
+                                    <div class="table-cell status cleared">Cleared</div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="table-cell">Mar 14, 2025</div>
+                                    <div class="table-cell">Client Payment - ABC Corp</div>
+                                    <div class="table-cell">Revenue</div>
+                                    <div class="table-cell amount positive">+$12,750.00</div>
+                                    <div class="table-cell status cleared">Cleared</div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="table-cell">Mar 13, 2025</div>
+                                    <div class="table-cell">Utility Payment</div>
+                                    <div class="table-cell">Operating</div>
+                                    <div class="table-cell amount negative">-$485.50</div>
+                                    <div class="table-cell status pending">Pending</div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="table-cell">Mar 12, 2025</div>
+                                    <div class="table-cell">Software Subscription</div>
+                                    <div class="table-cell">Technology</div>
+                                    <div class="table-cell amount negative">-$299.00</div>
+                                    <div class="table-cell status cleared">Cleared</div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="table-cell">Mar 11, 2025</div>
+                                    <div class="table-cell">Consulting Revenue</div>
+                                    <div class="table-cell">Revenue</div>
+                                    <div class="table-cell amount positive">+$5,500.00</div>
+                                    <div class="table-cell status cleared">Cleared</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="reports">
+                        <div class="reports-grid">
+                            <div class="report-card">
+                                <div class="report-icon">📋</div>
+                                <h4>Profit & Loss</h4>
+                                <p>Detailed revenue and expense breakdown</p>
+                                <button class="report-btn">Generate Report</button>
+                            </div>
+                            <div class="report-card">
+                                <div class="report-icon">⚖️</div>
+                                <h4>Balance Sheet</h4>
+                                <p>Assets, liabilities, and equity summary</p>
+                                <button class="report-btn">Generate Report</button>
+                            </div>
+                            <div class="report-card">
+                                <div class="report-icon">💸</div>
+                                <h4>Cash Flow</h4>
+                                <p>Operating, investing, and financing activities</p>
+                                <button class="report-btn">Generate Report</button>
+                            </div>
+                            <div class="report-card">
+                                <div class="report-icon">📊</div>
+                                <h4>Custom Report</h4>
+                                <p>Build your own financial analysis</p>
+                                <button class="report-btn">Create Custom</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="tax">
+                        <div class="tax-center">
+                            <div class="tax-status">
+                                <h4>2025 Tax Status</h4>
+                                <div class="tax-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                    <span>75% Complete</span>
+                                </div>
+                            </div>
+                            <div class="tax-actions">
+                                <button class="tax-action">Upload Documents</button>
+                                <button class="tax-action">Schedule Review</button>
+                                <button class="tax-action">View Estimates</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="documents">
+                        <div class="documents-section">
+                            <div class="document-categories">
+                                <button class="doc-category active">All Documents</button>
+                                <button class="doc-category">Tax Returns</button>
+                                <button class="doc-category">Financial Statements</button>
+                                <button class="doc-category">Contracts</button>
+                            </div>
+                            <div class="documents-list">
+                                <div class="document-item">
+                                    <div class="doc-icon">📄</div>
+                                    <div class="doc-info">
+                                        <span class="doc-name">2024 Tax Return.pdf</span>
+                                        <span class="doc-date">Filed: April 15, 2024</span>
+                                    </div>
+                                    <button class="doc-download">Download</button>
+                                </div>
+                                <div class="document-item">
+                                    <div class="doc-icon">📊</div>
+                                    <div class="doc-info">
+                                        <span class="doc-name">Q4 2024 Financial Statement.pdf</span>
+                                        <span class="doc-date">Generated: January 15, 2025</span>
+                                    </div>
+                                    <button class="doc-download">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Team</span>
+                <h2 class="section-title">Certified Financial Professionals</h2>
+                <p class="section-subtitle">
+                    Meet our experienced team of CPAs, tax specialists, and financial consultants
+                    dedicated to your success.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder"></div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">Sarah Johnson, CPA</h4>
+                        <span class="member-title">Managing Partner</span>
+                        <p class="member-description">
+                            20+ years experience in corporate accounting and tax strategy.
+                            Specializes in business consulting and financial planning.
+                        </p>
+                        <div class="member-credentials">
+                            <span class="credential">CPA</span>
+                            <span class="credential">MBA</span>
+                            <span class="credential">CFE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder"></div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">Michael Chen, CPA</h4>
+                        <span class="member-title">Senior Tax Manager</span>
+                        <p class="member-description">
+                            Expert in complex tax situations, multi-state filings, and
+                            IRS representation with 15 years of experience.
+                        </p>
+                        <div class="member-credentials">
+                            <span class="credential">CPA</span>
+                            <span class="credential">EA</span>
+                            <span class="credential">MST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder"></div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">Lisa Rodriguez</h4>
+                        <span class="member-title">Financial Analyst</span>
+                        <p class="member-description">
+                            Specializes in financial reporting, budgeting, and business
+                            analytics. Expert in QuickBooks and advanced Excel modeling.
+                        </p>
+                        <div class="member-credentials">
+                            <span class="credential">CMA</span>
+                            <span class="credential">QuickBooks ProAdvisor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder"></div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">David Park, CPA</h4>
+                        <span class="member-title">Audit Manager</span>
+                        <p class="member-description">
+                            Focuses on financial audits, compliance, and internal controls.
+                            12 years experience with public and private companies.
+                        </p>
+                        <div class="member-credentials">
+                            <span class="credential">CPA</span>
+                            <span class="credential">CIA</span>
+                            <span class="credential">CISA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-badge">Get Started</span>
+                    <h2 class="section-title">Schedule Your Free Consultation</h2>
+                    <p class="contact-description">
+                        Take the first step towards better financial management. Our initial
+                        consultation is always free, and we'll provide actionable insights
+                        for your specific situation.
+                    </p>
+
+                    <div class="contact-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <span>Free 30-minute consultation</span>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <span>Same-day response guaranteed</span>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <span>No obligation assessment</span>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <span>Transparent pricing</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Call Us</h4>
+                                <p>(555) 123-ACCT</p>
+                                <span>Mon-Fri: 8AM-6PM</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-content">
+                                <h4>Email Us</h4>
+                                <p>info@precisionaccounting.com</p>
+                                <span>Response within 2 hours</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-content">
+                                <h4>Visit Our Office</h4>
+                                <p>1250 Business Plaza, Suite 300<br>Atlanta, GA 30309</p>
+                                <span>By appointment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-header">
+                            <h3>Request Free Consultation</h3>
+                            <p>Fill out the form below and we'll contact you within 24 hours</p>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Contact Information</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Business Information</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="businessName">Business Name</label>
+                                    <input type="text" id="businessName" name="businessName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="businessType">Business Type</label>
+                                    <select id="businessType" name="businessType">
+                                        <option value="">Select Type</option>
+                                        <option value="sole-proprietorship">Sole Proprietorship</option>
+                                        <option value="partnership">Partnership</option>
+                                        <option value="llc">LLC</option>
+                                        <option value="corporation">Corporation</option>
+                                        <option value="s-corp">S-Corporation</option>
+                                        <option value="nonprofit">Non-Profit</option>
+                                        <option value="individual">Individual</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="annualRevenue">Annual Revenue Range</label>
+                                <select id="annualRevenue" name="annualRevenue">
+                                    <option value="">Select Range</option>
+                                    <option value="under-50k">Under $50,000</option>
+                                    <option value="50k-100k">$50,000 - $100,000</option>
+                                    <option value="100k-250k">$100,000 - $250,000</option>
+                                    <option value="250k-500k">$250,000 - $500,000</option>
+                                    <option value="500k-1m">$500,000 - $1,000,000</option>
+                                    <option value="over-1m">Over $1,000,000</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Services Needed</h4>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="services" value="bookkeeping">
+                                    <span class="checkmark"></span>
+                                    Monthly Bookkeeping
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="services" value="tax-prep">
+                                    <span class="checkmark"></span>
+                                    Tax Preparation
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="services" value="payroll">
+                                    <span class="checkmark"></span>
+                                    Payroll Services
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="services" value="consulting">
+                                    <span class="checkmark"></span>
+                                    Financial Consulting
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="services" value="audit">
+                                    <span class="checkmark"></span>
+                                    Audit Services
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="services" value="setup">
+                                    <span class="checkmark"></span>
+                                    Business Setup
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Additional Information</h4>
+                            <div class="form-group">
+                                <label for="urgency">When do you need to start?</label>
+                                <select id="urgency" name="urgency">
+                                    <option value="immediately">Immediately</option>
+                                    <option value="within-week">Within a week</option>
+                                    <option value="within-month">Within a month</option>
+                                    <option value="planning">Just planning ahead</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Tell us about your specific needs</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Describe your current situation, challenges, or specific requirements..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Preferred Contact Method</h4>
+                            <div class="radio-group">
+                                <label class="radio-item">
+                                    <input type="radio" name="contactMethod" value="phone" checked>
+                                    <span class="radio-mark"></span>
+                                    Phone Call
+                                </label>
+                                <label class="radio-item">
+                                    <input type="radio" name="contactMethod" value="email">
+                                    <span class="radio-mark"></span>
+                                    Email
+                                </label>
+                                <label class="radio-item">
+                                    <input type="radio" name="contactMethod" value="meeting">
+                                    <span class="radio-mark"></span>
+                                    In-Person Meeting
+                                </label>
+                                <label class="radio-item">
+                                    <input type="radio" name="contactMethod" value="video">
+                                    <span class="radio-mark"></span>
+                                    Video Call
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-footer">
+                            <div class="privacy-notice">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the privacy policy and consent to being contacted about my inquiry
+                                </label>
+                            </div>
+                            <button type="submit" class="submit-btn">Schedule Free Consultation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <div class="calculator-grid">
+                                <div class="calc-button"></div>
+                                <div class="calc-button"></div>
+                                <div class="calc-button"></div>
+                                <div class="calc-button active"></div>
+                            </div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Precision</span>
+                            <span class="logo-sub">Accounting & Tax</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Professional accounting, tax, and financial consulting services
+                        for businesses and individuals. Trusted advisors since 2004.
+                    </p>
+                    <div class="footer-certifications">
+                        <div class="cert-item">
+                            <span class="cert-badge">CPA</span>
+                            <span class="cert-text">Certified Public Accountants</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">IRS</span>
+                            <span class="cert-text">Authorized Representatives</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">QB</span>
+                            <span class="cert-text">QuickBooks ProAdvisors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-list">
+                            <li><a href="#services">Bookkeeping</a></li>
+                            <li><a href="#services">Tax Preparation</a></li>
+                            <li><a href="#services">Business Consulting</a></li>
+                            <li><a href="#services">Payroll Services</a></li>
+                            <li><a href="#services">Financial Planning</a></li>
+                            <li><a href="#services">Audit Services</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-list">
+                            <li><a href="#">Tax Calendar</a></li>
+                            <li><a href="#">Financial Calculators</a></li>
+                            <li><a href="#">IRS Forms</a></li>
+                            <li><a href="#">Client Portal</a></li>
+                            <li><a href="#">Document Upload</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contact</h4>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span>(555) 123-ACCT</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>info@precisionaccounting.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>1250 Business Plaza, Suite 300<br>Atlanta, GA 30309</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🕒</span>
+                                <span>Mon-Fri: 8AM-6PM<br>Sat: 9AM-2PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Precision Accounting & Tax Services. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Client Agreement</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+                <div class="footer-disclaimer">
+                    <p>Licensed CPA Firm | Georgia License #12345 | IRS Enrolled Agents on Staff</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+section { display: flex; justify-content: center; padding: 2rem; }
+.form { width: 100%; max-width: 520px; }
+form { display: flex; flex-direction: column; gap: .75rem; }
+input { padding: .6rem .8rem; border: 1px solid #ccc; border-radius: 6px; }
+button { margin-top: .5rem; padding: .7rem 1rem; border: 0; border-radius: 6px; background: #0d6efd; color: #fff; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.error { color: #c0392b; font-size: .85rem; }
+#submit_message { margin-top: 1rem; padding: 1rem; border: 1px solid #e6e6e6; border-radius: 8px; background: #f8f9fa; }

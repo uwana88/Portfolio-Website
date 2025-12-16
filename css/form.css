@@ -1,0 +1,37 @@
+.form {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(to left, #ba1010, #8e0000);
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.form .formInfo {
+    width: 40%;
+    padding: 40px 24px;
+    margin: 0;
+    background: #000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    color: #ffff;
+}
+
+.form form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 40px;
+    gap: 24px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.form form input, .form form button {
+    border-radius: 15px;
+    padding: 12px 24px;
+}
+
+.form form button {
+    background-color: #000;
+    color: #fff;
+}

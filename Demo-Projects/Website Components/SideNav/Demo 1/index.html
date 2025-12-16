@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Navigation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar-nav" id="sidebarNav">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="12" fill="url(#logoGradient)"/>
+                            <path d="M12 16h16v8H12v-8zm4-4h8v4h-8v-4z" fill="white"/>
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40">
+                                    <stop stop-color="#6366F1"/>
+                                    <stop offset="1" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Dashboard</span>
+                        <span class="logo-subtitle">v2.1.0</span>
+                    </div>
+                </div>
+                
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- User Profile -->
+            <div class="user-profile">
+                <div class="profile-avatar">
+                    <div class="avatar-image">
+                        <span class="avatar-initial">JD</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name">John Doe</div>
+                    <div class="profile-role">Administrator</div>
+                </div>
+                <button class="profile-menu-btn" id="profileMenuBtn" aria-label="Profile menu">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="1" fill="currentColor"/>
+                        <circle cx="19" cy="12" r="1" fill="currentColor"/>
+                        <circle cx="5" cy="12" r="1" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <button class="quick-action-btn" data-tooltip="New Project">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2"/>
+                        <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button class="quick-action-btn" data-tooltip="Messages">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                        <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="quick-action-btn" data-tooltip="Notifications">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 8a6 6 0 00-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="notification-badge">7</span>
+                </button>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="nav-menu">
+                <div class="nav-section">
+                    <div class="nav-section-title">Main Menu</div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <div class="nav-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="2"/>
+                                        <polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="nav-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2" stroke="currentColor" stroke-width="2"/>
+                                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="nav-text">Projects</span>
+                                <span class="nav-badge">12</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item has-submenu" id="analyticsSubmenu">
+                            <a href="#" class="nav-link submenu-trigger">
+                                <div class="nav-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="nav-text">Analytics</span>
+                                <div class="submenu-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <polyline points="9,18 15,12 9,6" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#" class="submenu-link">Overview</a></li>
+                                <li><a href="#" class="submenu-link">Reports</a></li>
+                                <li><a href="#" class="submenu-link">Real-time</a></li>
+                                <li><a href="#" class="submenu-link">Export</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="nav-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2"/>
+                                        <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="nav-text">Users</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item has-submenu" id="settingsSubmenu">
+                            <a href="#" class="nav-link submenu-trigger">
+                                <div class="nav-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="nav-text">Settings</span>
+                                <div class="submenu-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <polyline points="9,18 15,12 9,6" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#" class="submenu-link">General</a></li>
+                                <li><a href="#" class="submenu-link">Security</a></li>
+                                <li><a href="#" class="submenu-link">Integrations</a></li>
+                                <li><a href="#" class="submenu-link">Billing</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Tools</div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="nav-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+                                        <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="nav-text">Orders</span>
+                                <span class="nav-badge new">NEW</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="nav-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                                        <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="nav-text">Messages</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="nav-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="nav-text">Help & Support</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sidebar Footer -->
+            <div class="sidebar-footer">
+                <div class="storage-info">
+                    <div class="storage-header">
+                        <span class="storage-label">Storage Used</span>
+                        <span class="storage-percentage">78%</span>
+                    </div>
+                    <div class="storage-bar">
+                        <div class="storage-fill" style="width: 78%"></div>
+                    </div>
+                    <div class="storage-details">
+                        <span class="storage-used">7.8 GB</span>
+                        <span class="storage-total">of 10 GB</span>
+                    </div>
+                </div>
+                
+                <button class="upgrade-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <polyline points="8,18 12,14 16,18" stroke="currentColor" stroke-width="2"/>
+                        <polyline points="8,6 12,2 16,6" stroke="currentColor" stroke-width="2"/>
+                        <line x1="12" y1="2" x2="12" y2="14" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>Upgrade Plan</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <div class="content-header">
+                <h1>Sidebar Navigation Demo</h1>
+                <p>Toggle the sidebar with the hamburger menu or resize the window to see responsive behavior.</p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Navigation Features</h3>
+                    <ul>
+                        <li>Collapsible sidebar design</li>
+                        <li>User profile section</li>
+                        <li>Quick action buttons</li>
+                        <li>Nested submenu support</li>
+                        <li>Storage usage indicator</li>
+                        <li>Responsive mobile overlay</li>
+                    </ul>
+                </div>
+                
+                <div class="content-card">
+                    <h3>Interactive Elements</h3>
+                    <ul>
+                        <li>Hover effects and transitions</li>
+                        <li>Badge notifications</li>
+                        <li>Tooltip support</li>
+                        <li>Active state management</li>
+                        <li>Smooth animations</li>
+                        <li>Keyboard navigation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

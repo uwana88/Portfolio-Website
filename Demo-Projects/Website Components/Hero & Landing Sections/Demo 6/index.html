@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Cards Hero with Tilt Effect</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- 3D Cards Hero Section -->
+    <section class="cards-hero" id="cardsHero">
+        <!-- Background Grid -->
+        <div class="grid-background">
+            <div class="grid-lines"></div>
+            <div class="grid-glow"></div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="float-element element-1">
+                <div class="element-inner"></div>
+            </div>
+            <div class="float-element element-2">
+                <div class="element-inner"></div>
+            </div>
+            <div class="float-element element-3">
+                <div class="element-inner"></div>
+            </div>
+            <div class="float-element element-4">
+                <div class="element-inner"></div>
+            </div>
+        </div>
+
+        <!-- Main Container -->
+        <div class="hero-container">
+            <!-- Header Section -->
+            <header class="cards-header">
+                <div class="header-wrapper">
+                    <!-- Logo -->
+                    <div class="logo-3d">
+                        <div class="logo-cube">
+                            <div class="cube-face front">3D</div>
+                            <div class="cube-face back">3D</div>
+                            <div class="cube-face right">3D</div>
+                            <div class="cube-face left">3D</div>
+                            <div class="cube-face top">3D</div>
+                            <div class="cube-face bottom">3D</div>
+                        </div>
+                        <span class="logo-text">Studio</span>
+                    </div>
+
+                    <!-- Navigation -->
+                    <nav class="nav-3d">
+                        <a href="#" class="nav-link" data-text="Products">
+                            <span class="link-text">Products</span>
+                            <span class="link-hover">Products</span>
+                        </a>
+                        <a href="#" class="nav-link" data-text="Solutions">
+                            <span class="link-text">Solutions</span>
+                            <span class="link-hover">Solutions</span>
+                        </a>
+                        <a href="#" class="nav-link" data-text="Resources">
+                            <span class="link-text">Resources</span>
+                            <span class="link-hover">Resources</span>
+                        </a>
+                        <a href="#" class="nav-link" data-text="Company">
+                            <span class="link-text">Company</span>
+                            <span class="link-hover">Company</span>
+                        </a>
+                    </nav>
+
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle">
+                        <div class="toggle-track">
+                            <div class="toggle-thumb"></div>
+                            <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5" fill="currentColor"/>
+                                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24">
+                                <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <!-- Text Content -->
+                <div class="content-text">
+                    <div class="badge-3d">
+                        <span class="badge-icon">✨</span>
+                        <span class="badge-text">Interactive Experience</span>
+                    </div>
+
+                    <h1 class="hero-title-3d">
+                        <span class="title-line">
+                            <span class="word">Discover</span>
+                            <span class="word gradient-word">Amazing</span>
+                        </span>
+                        <span class="title-line">
+                            <span class="word">3D</span>
+                            <span class="word">Interactions</span>
+                        </span>
+                    </h1>
+
+                    <p class="hero-description-3d">
+                        Experience the future of web design with our cutting-edge 3D components
+                        and interactive elements that bring your ideas to life.
+                    </p>
+
+                    <div class="cta-group-3d">
+                        <button class="btn-3d primary">
+                            <span class="btn-content">
+                                <span class="btn-text">Get Started</span>
+                                <span class="btn-icon">→</span>
+                            </span>
+                            <span class="btn-reflection"></span>
+                        </button>
+                        <button class="btn-3d secondary">
+                            <span class="btn-content">
+                                <span class="btn-text">Learn More</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Feature List -->
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">⚡</span>
+                            <span class="feature-text">Lightning Fast</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🎨</span>
+                            <span class="feature-text">Beautiful Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔒</span>
+                            <span class="feature-text">Secure Platform</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Cards Section -->
+                <div class="cards-container">
+                    <!-- Card 1 -->
+                    <div class="card-3d" data-tilt>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-glow"></div>
+                                <div class="card-shine"></div>
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <div class="icon-3d">
+                                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                                <rect x="8" y="8" width="32" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                <path d="M16 24l6 6 12-12" stroke="currentColor" stroke-width="2" fill="none"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h3 class="card-title">Premium Features</h3>
+                                    <p class="card-description">
+                                        Access advanced tools and capabilities designed for professionals
+                                    </p>
+                                    <div class="card-stats">
+                                        <span class="stat">99.9% Uptime</span>
+                                        <span class="stat">24/7 Support</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">
+                                        Explore Features
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="back-pattern"></div>
+                                <div class="back-content">
+                                    <h4>What's Included</h4>
+                                    <ul class="feature-list-card">
+                                        <li>Advanced Analytics</li>
+                                        <li>Custom Integrations</li>
+                                        <li>Priority Support</li>
+                                        <li>Unlimited Storage</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card-3d featured" data-tilt>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="featured-badge">Popular</div>
+                                <div class="card-glow"></div>
+                                <div class="card-shine"></div>
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <div class="icon-3d">
+                                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                                <polygon points="24,4 29,14 40,16 32,24 34,35 24,30 14,35 16,24 8,16 19,14" 
+                                                         fill="none" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h3 class="card-title">Enterprise Solution</h3>
+                                    <p class="card-description">
+                                        Complete suite of tools for large-scale operations and teams
+                                    </p>
+                                    <div class="card-price">
+                                        <span class="price-amount">$299</span>
+                                        <span class="price-period">/month</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="card-btn">
+                                        Get Started Now
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="back-pattern"></div>
+                                <div class="back-content">
+                                    <h4>Enterprise Benefits</h4>
+                                    <ul class="feature-list-card">
+                                        <li>Dedicated Account Manager</li>
+                                        <li>Custom Training Program</li>
+                                        <li>SLA Guarantee</li>
+                                        <li>API Access</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-3d" data-tilt>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-glow"></div>
+                                <div class="card-shine"></div>
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <div class="icon-3d">
+                                            <svg width="48" height="48" viewBox="0 0 48 48">
+                                                <circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                <path d="M24 16v8l6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h3 class="card-title">Real-time Updates</h3>
+                                    <p class="card-description">
+                                        Stay connected with instant notifications and live data streams
+                                    </p>
+                                    <div class="card-tags">
+                                        <span class="tag">Fast</span>
+                                        <span class="tag">Reliable</span>
+                                        <span class="tag">Secure</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">
+                                        Learn More
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="back-pattern"></div>
+                                <div class="back-content">
+                                    <h4>Key Features</h4>
+                                    <ul class="feature-list-card">
+                                        <li>WebSocket Support</li>
+                                        <li>Push Notifications</li>
+                                        <li>Event Streaming</li>
+                                        <li>Data Sync</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="hero-bottom">
+                <!-- Testimonial Slider -->
+                <div class="testimonial-3d">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "The 3D interactions completely transformed our user experience"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <span class="author-name">Alex Chen</span>
+                                <span class="author-role">CEO, TechCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mouse Indicator -->
+                <div class="mouse-3d">
+                    <div class="mouse-body">
+                        <div class="mouse-wheel"></div>
+                    </div>
+                    <span class="mouse-text">Interact with cards</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cursor Effects -->
+        <div class="cursor-3d">
+            <div class="cursor-ball"></div>
+            <div class="cursor-trail"></div>
+        </div>
+    </section>
+
+    <!-- Next Section -->
+    <section class="next-section">
+        <div class="section-container">
+            <h2>Continue Your Journey</h2>
+            <p>Explore more amazing features below...</p>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen Hero with Video Background</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Split Screen Hero Section -->
+    <section class="split-hero" id="splitHero">
+        <!-- Left Panel - Content Side -->
+        <div class="hero-panel content-panel" id="contentPanel">
+            <!-- Background Pattern -->
+            <div class="pattern-overlay"></div>
+            
+            <!-- Content Container -->
+            <div class="panel-content">
+                <!-- Logo/Brand -->
+                <div class="brand-logo">
+                    <div class="logo-mark">
+                        <span class="logo-letter">S</span>
+                    </div>
+                    <span class="brand-name">Studio</span>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="hero-main">
+                    <!-- Animated Badge -->
+                    <div class="animated-badge">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">Available for Projects</span>
+                    </div>
+                    
+                    <!-- Hero Heading -->
+                    <h1 class="hero-heading">
+                        <span class="heading-top">Creative</span>
+                        <span class="heading-bottom">
+                            <span class="text-outline">Digital</span>
+                            <span class="text-filled">Studio</span>
+                        </span>
+                    </h1>
+                    
+                    <!-- Description -->
+                    <p class="hero-description">
+                        We craft exceptional digital experiences that inspire, 
+                        engage, and deliver measurable results for forward-thinking brands.
+                    </p>
+                    
+                    <!-- CTA Group -->
+                    <div class="cta-container">
+                        <a href="#" class="cta-primary">
+                            <span class="cta-text">Start Your Project</span>
+                            <div class="cta-arrow">
+                                <svg width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M5 10 L15 10 M10 5 L15 10 L10 15" 
+                                          stroke="currentColor" 
+                                          stroke-width="2" 
+                                          fill="none"/>
+                                </svg>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="cta-secondary">
+                            <span class="cta-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <path d="M10 8 L16 12 L10 16 Z" fill="currentColor"/>
+                                </svg>
+                            </span>
+                            <span class="cta-text">Watch Showreel</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Quick Stats -->
+                    <div class="quick-stats">
+                        <div class="stat">
+                            <span class="stat-value">150+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-separator"></div>
+                        <div class="stat">
+                            <span class="stat-value">50+</span>
+                            <span class="stat-label">Awards</span>
+                        </div>
+                        <div class="stat-separator"></div>
+                        <div class="stat">
+                            <span class="stat-value">98%</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="#" class="social-link" data-social="dribbble">
+                        <span class="social-icon">Dr</span>
+                    </a>
+                    <a href="#" class="social-link" data-social="behance">
+                        <span class="social-icon">Be</span>
+                    </a>
+                    <a href="#" class="social-link" data-social="instagram">
+                        <span class="social-icon">Ig</span>
+                    </a>
+                    <a href="#" class="social-link" data-social="linkedin">
+                        <span class="social-icon">In</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Decorative Elements -->
+            <div class="corner-decoration top-left"></div>
+            <div class="corner-decoration bottom-right"></div>
+        </div>
+        
+        <!-- Right Panel - Video Side -->
+        <div class="hero-panel video-panel" id="videoPanel">
+            <!-- Video Background -->
+            <div class="video-container">
+                <video class="background-video" autoplay muted loop playsinline>
+                    <source src="h3.mp4" type="video/mp4">
+                    <!-- Fallback for browsers that don't support video -->
+                    <div class="video-fallback"></div>
+                </video>
+                
+                <!-- Video Overlay -->
+                <div class="video-overlay"></div>
+            </div>
+            
+            <!-- Floating Content Cards -->
+            <div class="floating-content">
+                <!-- Project Preview Card -->
+                <div class="preview-card card-project">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h4 class="card-title">Latest Project</h4>
+                        <p class="card-subtitle">Brand Identity Design</p>
+                        <div class="card-progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Achievement Card -->
+                <div class="preview-card card-achievement">
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-text">
+                        <span class="achievement-title">Award Winner</span>
+                        <span class="achievement-year">2024</span>
+                    </div>
+                </div>
+                
+                <!-- Client Review Card -->
+                <div class="preview-card card-review">
+                    <div class="review-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="review-text">"Exceptional work and attention to detail"</p>
+                    <div class="review-author">
+                        <div class="author-avatar"></div>
+                        <span class="author-name">Sarah Chen</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Controls -->
+            <div class="video-controls">
+                <button class="control-btn" id="playPauseBtn">
+                    <svg class="play-icon" width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M5 3 L5 17 L15 10 Z" fill="currentColor"/>
+                    </svg>
+                    <svg class="pause-icon" width="20" height="20" viewBox="0 0 20 20" style="display: none;">
+                        <rect x="5" y="3" width="3" height="14" fill="currentColor"/>
+                        <rect x="12" y="3" width="3" height="14" fill="currentColor"/>
+                    </svg>
+                </button>
+                <button class="control-btn" id="muteBtn">
+                    <svg class="volume-icon" width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M10 3 L5 7 L2 7 L2 13 L5 13 L10 17 Z" fill="currentColor"/>
+                        <path d="M13 7 C13 7 15 8 15 10 C15 12 13 13 13 13" 
+                              stroke="currentColor" 
+                              stroke-width="2" 
+                              fill="none"/>
+                    </svg>
+                    <svg class="mute-icon" width="20" height="20" viewBox="0 0 20 20" style="display: none;">
+                        <path d="M10 3 L5 7 L2 7 L2 13 L5 13 L10 17 Z" fill="currentColor"/>
+                        <path d="M14 8 L18 12 M18 8 L14 12" 
+                              stroke="currentColor" 
+                              stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Panel Separator -->
+            <div class="panel-separator">
+                <div class="separator-line"></div>
+                <div class="separator-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M15 20 L25 20 M20 15 L25 20 L20 25" 
+                              stroke="currentColor" 
+                              stroke-width="2" 
+                              fill="none"/>
+                    </svg>
+                </div>
+                <div class="separator-line"></div>
+            </div>
+        </div>
+        
+        <!-- Navigation Dots -->
+        <div class="hero-navigation">
+            <button class="nav-dot active" data-index="0"></button>
+            <button class="nav-dot" data-index="1"></button>
+            <button class="nav-dot" data-index="2"></button>
+            <button class="nav-dot" data-index="3"></button>
+        </div>
+        
+        <!-- Scroll Prompt -->
+        <div class="scroll-prompt">
+            <div class="scroll-line"></div>
+            <span class="scroll-label">Scroll</span>
+        </div>
+    </section>
+    
+    <!-- Next Section (for demo) -->
+    <section class="next-section">
+        <div class="section-content">
+            <h2>Next Section Content</h2>
+            <p>Your amazing content continues here...</p>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Image Slider Hero with Ken Burns Effect</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Fullscreen Slider Hero -->
+    <section class="slider-hero" id="sliderHero">
+        <!-- Background Slides -->
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide active" data-slide="1">
+                <div class="slide-bg" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM2NjdlZWE7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM3NjRiYTI7c3RvcC1vcGFjaXR5OjEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI2cxKSIvPjwvc3ZnPg==');">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <span class="slide-category">Innovation</span>
+                    <h2 class="slide-title">
+                        <span class="title-line">Transform Your</span>
+                        <span class="title-line">Digital Experience</span>
+                    </h2>
+                    <p class="slide-description">
+                        Cutting-edge solutions that drive growth and inspire change
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide" data-slide="2">
+                <div class="slide-bg" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZzIiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNmMDkzZmI7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNmNTU3NmM7c3RvcC1vcGFjaXR5OjEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI2cyKSIvPjwvc3ZnPg==');">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <span class="slide-category">Design</span>
+                    <h2 class="slide-title">
+                        <span class="title-line">Beautiful &</span>
+                        <span class="title-line">Functional Design</span>
+                    </h2>
+                    <p class="slide-description">
+                        Where creativity meets purpose to create stunning experiences
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide" data-slide="3">
+                <div class="slide-bg" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZzMiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM0ZmFjZmU7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMGYyZmU7c3RvcC1vcGFjaXR5OjEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI2czKSIvPjwvc3ZnPg==');">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <span class="slide-category">Technology</span>
+                    <h2 class="slide-title">
+                        <span class="title-line">Next Generation</span>
+                        <span class="title-line">Technology Stack</span>
+                    </h2>
+                    <p class="slide-description">
+                        Powered by the latest frameworks and cloud infrastructure
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide" data-slide="4">
+                <div class="slide-bg" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZzQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM0M2U5N2I7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMzOGY5ZDc7c3RvcC1vcGFjaXR5OjEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSJ1cmwoI2c0KSIvPjwvc3ZnPg==');">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <span class="slide-category">Growth</span>
+                    <h2 class="slide-title">
+                        <span class="title-line">Scale Your</span>
+                        <span class="title-line">Business Impact</span>
+                    </h2>
+                    <p class="slide-description">
+                        Strategic solutions that accelerate growth and maximize ROI
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Header -->
+        <header class="slider-header">
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="slider-logo">
+                    <div class="logo-shape">
+                        <div class="shape-inner"></div>
+                    </div>
+                    <span class="logo-text">STUDIO</span>
+                </div>
+
+                <!-- Main Navigation -->
+                <nav class="slider-nav">
+                    <a href="#" class="nav-item">Services</a>
+                    <a href="#" class="nav-item">Portfolio</a>
+                    <a href="#" class="nav-item">About</a>
+                    <a href="#" class="nav-item">Contact</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="sound-toggle" id="soundToggle">
+                        <span class="sound-on">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        <span class="sound-off" style="display: none;">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Overlay -->
+        <div class="hero-content-wrapper">
+            <div class="hero-main-content">
+                <!-- Slide Number -->
+                <div class="slide-number">
+                    <span class="current-slide">01</span>
+                    <span class="slide-divider">/</span>
+                    <span class="total-slides">04</span>
+                </div>
+
+                <!-- Main CTA -->
+                <div class="hero-cta-section">
+                    <a href="#" class="main-cta">
+                        <span class="cta-text">Explore Our Work</span>
+                        <span class="cta-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="secondary-cta">
+                        <span class="cta-play">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M10 8l6 4-6 4V8z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        <span class="cta-text">Watch Reel</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Controls -->
+        <div class="slide-controls">
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="slide-arrow prev" id="prevSlide">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1" fill="none"/>
+                    <path d="M23 14l-6 6 6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </button>
+            <button class="slide-arrow next" id="nextSlide">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1" fill="none"/>
+                    <path d="M17 14l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </button>
+
+            <!-- Slide Indicators -->
+            <div class="slide-indicators">
+                <button class="indicator active" data-slide="1">
+                    <span class="indicator-fill"></span>
+                </button>
+                <button class="indicator" data-slide="2">
+                    <span class="indicator-fill"></span>
+                </button>
+                <button class="indicator" data-slide="3">
+                    <span class="indicator-fill"></span>
+                </button>
+                <button class="indicator" data-slide="4">
+                    <span class="indicator-fill"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Side Info Panel -->
+        <div class="side-panel">
+            <div class="panel-content">
+                <h3 class="panel-title">Quick Stats</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-value">250+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">98%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">50+</span>
+                        <span class="stat-label">Team Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">15</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <button class="panel-toggle" id="panelToggle">
+                <span class="toggle-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M5 6l5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </span>
+            </button>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-down">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-icon">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+
+        <!-- Ambient Particles -->
+        <div class="particles-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </section>
+
+    <!-- Next Section -->
+    <section class="next-content">
+        <div class="content-inner">
+            <h2>Discover More</h2>
+            <p>Continue scrolling to explore our portfolio...</p>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

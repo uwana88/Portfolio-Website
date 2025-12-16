@@ -1,0 +1,120 @@
+.textEditor-wrapper {
+    text-align: center;
+    background-image: linear-gradient(to left, #ffd700, #ff5e00);
+}
+
+.textEditor {
+    height: auto;
+    display: flex;
+}
+
+.textEditor .content {
+    width: 60%;
+    padding: 80px 24px 24px;
+    align-content: center;
+}
+
+.textEditor .display {
+    width: 35%;
+    padding: 40px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    color: #fff;
+    text-shadow: 0px 0px 12px #aaa;
+}
+
+@media screen and (max-width: 767px) {
+    .textEditor {
+        flex-direction: column;
+    }
+
+    .textEditor .content {
+        width: 100%;
+    }
+
+    .textEditor .display {
+        width: 100%;
+    }
+}
+
+.textEditor .display div {
+    display: flex;
+    flex-direction: column;
+}
+
+.textEditor .content #form,
+.textEditor .content .submit_message {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    background: #f8f9fa;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.textEditor .content h2 {
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.textEditor .content input[type="text"],
+.textEditor .content input[type="email"],
+.textEditor .content input[type="password"],
+.textEditor .content input[type="tel"] {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border-color 0.2s;
+    margin: 0px 0px 0.8rem 0px;
+}
+
+.textEditor .content input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.textEditor .content button[type="button"],
+.textEditor .content .submit_message button,
+.textEditor .display a button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 0;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 1.2rem;
+    width: 100%;
+}
+
+.textEditor .content button[type="button"]:hover,
+.textEditor .content .submit_message button:hover,
+.textEditor .display button:hover {
+    background-image: linear-gradient(to right, #ff5e00, #ffd700);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.textEditor .content button[type="button"]:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.textEditor .content label {
+    font-size: 0.8rem;
+    min-height: 1.2rem;
+}
+
+.textEditor .content .submit_message {
+    text-align: center;
+    display: none;
+}

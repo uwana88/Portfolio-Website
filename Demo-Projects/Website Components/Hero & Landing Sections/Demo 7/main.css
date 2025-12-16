@@ -1,0 +1,1059 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+/* Liquid Hero Container */
+.liquid-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Liquid Background */
+.liquid-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#liquidCanvas {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.liquid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    pointer-events: none;
+}
+
+/* Blob Container */
+.blob-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.blob {
+    position: absolute;
+    filter: blur(40px);
+    opacity: 0.4;
+    mix-blend-mode: screen;
+}
+
+.blob-1 {
+    width: 400px;
+    height: 400px;
+    top: 10%;
+    left: 10%;
+    animation: blobFloat1 20s ease-in-out infinite;
+}
+
+.blob-2 {
+    width: 350px;
+    height: 350px;
+    bottom: 20%;
+    right: 10%;
+    animation: blobFloat2 25s ease-in-out infinite;
+}
+
+.blob-3 {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blobFloat3 30s ease-in-out infinite;
+}
+
+@keyframes blobFloat1 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+        transform: translate(-20px, 30px) scale(0.9);
+    }
+}
+
+@keyframes blobFloat2 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(-40px, 40px) scale(0.95);
+    }
+    66% {
+        transform: translate(50px, -20px) scale(1.05);
+    }
+}
+
+@keyframes blobFloat3 {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+/* Header */
+.liquid-header {
+    position: relative;
+    z-index: 100;
+    padding: 40px 60px;
+    animation: fadeInDown 1s ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Liquid Logo */
+.liquid-logo {
+    position: relative;
+}
+
+.logo-liquid {
+    display: flex;
+    gap: 2px;
+}
+
+.logo-char {
+    font-size: 24px;
+    font-weight: 800;
+    display: inline-block;
+    animation: liquidChar 3s ease-in-out infinite;
+}
+
+.logo-char:nth-child(1) { animation-delay: 0s; }
+.logo-char:nth-child(2) { animation-delay: 0.1s; }
+.logo-char:nth-child(3) { animation-delay: 0.2s; }
+.logo-char:nth-child(4) { animation-delay: 0.3s; }
+.logo-char:nth-child(5) { animation-delay: 0.4s; }
+.logo-char:nth-child(6) { animation-delay: 0.5s; }
+
+@keyframes liquidChar {
+    0%, 100% {
+        transform: translateY(0) scaleY(1);
+    }
+    50% {
+        transform: translateY(-5px) scaleY(1.2);
+    }
+}
+
+/* Liquid Navigation */
+.liquid-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.liquid-link {
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.liquid-link span {
+    position: relative;
+    display: inline-block;
+}
+
+.liquid-link::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #667eea;
+    transition: top 0.3s ease;
+}
+
+.liquid-link:hover span {
+    transform: translateY(-100%);
+}
+
+.liquid-link:hover::before {
+    top: 5px;
+}
+
+.liquid-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+}
+
+.liquid-link:hover::after {
+    width: 100%;
+}
+
+/* Menu Button */
+.liquid-menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.menu-liquid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-line {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: white;
+    margin: 6px auto;
+    transition: all 0.3s ease;
+}
+
+.liquid-menu-btn:hover .menu-line {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.liquid-menu-btn.active .menu-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.liquid-menu-btn.active .menu-line:nth-child(2) {
+    opacity: 0;
+}
+
+.liquid-menu-btn.active .menu-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Main Content */
+.hero-main {
+    position: relative;
+    z-index: 10;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+/* Typography Container */
+.typography-container {
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Liquid Badge */
+.liquid-badge {
+    display: inline-block;
+    position: relative;
+    padding: 10px 24px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 1s ease;
+}
+
+.badge-liquid {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.3), transparent);
+    animation: liquidRotate 10s linear infinite;
+}
+
+@keyframes liquidRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.badge-text {
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Liquid Title */
+.liquid-title {
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 900;
+    line-height: 0.9;
+    margin-bottom: 40px;
+    letter-spacing: -4px;
+}
+
+.title-row {
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+    min-height: 150px;
+}
+
+.title-word {
+    display: inline-block;
+    margin-right: 30px;
+    perspective: 1000px;
+}
+
+.char {
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+    animation: charWave 4s ease-in-out infinite;
+}
+
+.char::before {
+    content: attr(data-char);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(99, 102, 241, 0.3);
+    filter: blur(3px);
+    transform: translateZ(-10px);
+}
+
+.title-word:hover .char {
+    animation: charLiquid 0.6s ease;
+}
+
+@keyframes charWave {
+    0%, 100% {
+        transform: translateY(0) rotateX(0);
+    }
+    50% {
+        transform: translateY(-10px) rotateX(10deg);
+    }
+}
+
+@keyframes charLiquid {
+    0%, 100% {
+        transform: translateY(0) scaleY(1);
+    }
+    25% {
+        transform: translateY(-20px) scaleY(1.3);
+    }
+    75% {
+        transform: translateY(10px) scaleY(0.8);
+    }
+}
+
+/* Character animation delays */
+.char:nth-child(1) { animation-delay: 0s; }
+.char:nth-child(2) { animation-delay: 0.1s; }
+.char:nth-child(3) { animation-delay: 0.2s; }
+.char:nth-child(4) { animation-delay: 0.3s; }
+.char:nth-child(5) { animation-delay: 0.4s; }
+.char:nth-child(6) { animation-delay: 0.5s; }
+.char:nth-child(7) { animation-delay: 0.6s; }
+.char:nth-child(8) { animation-delay: 0.7s; }
+.char:nth-child(9) { animation-delay: 0.8s; }
+.char:nth-child(10) { animation-delay: 0.9s; }
+.char:nth-child(11) { animation-delay: 1s; }
+
+/* Outline Word */
+.outline-word .char {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    text-stroke: 2px white;
+}
+
+/* Gradient Word */
+.gradient-word .char {
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Liquid Subtitle */
+.liquid-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    animation: fadeInUp 1s ease 0.5s both;
+}
+
+.subtitle-static {
+    margin-right: 10px;
+}
+
+.subtitle-dynamic {
+    position: relative;
+    display: inline-block;
+    height: 1.5em;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.dynamic-word {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #667eea;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.dynamic-word.active {
+    top: 0;
+    opacity: 1;
+}
+
+/* CTA Group */
+.liquid-cta-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
+    animation: fadeInUp 1s ease 0.7s both;
+}
+
+.liquid-btn {
+    position: relative;
+    padding: 18px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.liquid-btn.primary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.liquid-btn.secondary {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-text {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-liquid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.liquid-btn:hover .btn-liquid {
+    width: 300%;
+    height: 300%;
+}
+
+.btn-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.liquid-btn.secondary:hover .btn-border {
+    border-color: #667eea;
+}
+
+/* Metrics */
+.liquid-metrics {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    animation: fadeIn 1s ease 1s both;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric-value {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 8px;
+}
+
+.metric-number {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.metric-suffix {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.metric-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.metric-divider {
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+/* Side Elements */
+.side-elements {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+}
+
+/* Float Cards */
+.float-card {
+    position: absolute;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    animation: floatCard 6s ease-in-out infinite;
+}
+
+.card-1 {
+    top: -150px;
+    right: 0;
+    animation-delay: 0s;
+}
+
+.card-2 {
+    top: 0;
+    right: 100px;
+    animation-delay: 2s;
+}
+
+.card-3 {
+    top: 150px;
+    right: 20px;
+    animation-delay: 4s;
+}
+
+@keyframes floatCard {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-20px) rotate(3deg); }
+}
+
+.card-liquid {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1), transparent);
+    animation: liquidMove 8s ease-in-out infinite;
+}
+
+@keyframes liquidMove {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(20px, 20px); }
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-icon {
+    font-size: 24px;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Scroll Indicator */
+.liquid-scroll {
+    position: absolute;
+    bottom: -200px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.scroll-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+    writing-mode: vertical-rl;
+}
+
+.scroll-line {
+    width: 2px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-liquid {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #667eea, transparent);
+    animation: scrollFlow 2s ease-in-out infinite;
+}
+
+@keyframes scrollFlow {
+    0% { top: -100%; }
+    100% { top: 100%; }
+}
+
+/* Bottom Section */
+.hero-bottom {
+    position: relative;
+    z-index: 10;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeInUp 1s ease 1.2s both;
+}
+
+/* Social Links */
+.liquid-social {
+    display: flex;
+    gap: 30px;
+}
+
+.social-link {
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.social-liquid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(118, 75, 162, 0.2));
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.social-link:hover {
+    color: white;
+}
+
+.social-link:hover .social-liquid {
+    width: 100%;
+}
+
+/* Play Button */
+.liquid-play {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.play-icon {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.play-liquid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.liquid-play:hover .play-liquid {
+    width: 100%;
+    height: 100%;
+}
+
+.liquid-play:hover .play-icon {
+    transform: scale(1.2);
+}
+
+.play-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Contact Info */
+.liquid-contact {
+    font-size: 14px;
+}
+
+.contact-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #667eea;
+}
+
+/* Magnetic Cursor */
+.magnetic-cursor {
+    pointer-events: none;
+    position: fixed;
+    z-index: 9999;
+}
+
+.cursor-inner {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: #667eea;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+}
+
+.cursor-outer {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(99, 102, 241, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.15s ease;
+}
+
+/* Menu Overlay */
+.liquid-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.98);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.liquid-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.menu-liquid-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1), transparent);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.8s ease;
+}
+
+.liquid-menu-overlay.active .menu-liquid-bg {
+    width: 200%;
+    height: 200%;
+}
+
+.menu-nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.3s ease;
+}
+
+.liquid-menu-overlay.active .menu-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.liquid-menu-overlay.active .menu-link:nth-child(1) { transition-delay: 0.1s; }
+.liquid-menu-overlay.active .menu-link:nth-child(2) { transition-delay: 0.2s; }
+.liquid-menu-overlay.active .menu-link:nth-child(3) { transition-delay: 0.3s; }
+.liquid-menu-overlay.active .menu-link:nth-child(4) { transition-delay: 0.4s; }
+
+.link-number {
+    font-size: 1rem;
+    color: #667eea;
+}
+
+.link-liquid {
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.2), transparent);
+    transform: translateY(-50%);
+    transition: left 0.5s ease;
+}
+
+.menu-link:hover .link-liquid {
+    left: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Next Section */
+.next-section {
+    min-height: 100vh;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+}
+
+.section-wrapper {
+    text-align: center;
+}
+
+.section-wrapper h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section-wrapper p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .side-elements {
+        display: none;
+    }
+
+    .title-row {
+        min-height: 80px;
+    }
+    
+    .liquid-title {
+        font-size: clamp(2.5rem, 6vw, 5rem);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        cursor: auto;
+    }
+
+    .title-row {
+        min-height: 40px;
+    }
+    
+    .magnetic-cursor {
+        display: none;
+    }
+    
+    .liquid-nav {
+        display: none;
+    }
+    
+    .liquid-header {
+        padding: 30px;
+    }
+    
+    .hero-main {
+        padding: 30px;
+    }
+    
+    .liquid-title {
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+    
+    .liquid-cta-group {
+        flex-direction: column;
+    }
+    
+    .liquid-btn {
+        width: 100%;
+    }
+    
+    .liquid-metrics {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .metric-divider {
+        display: none;
+    }
+    
+    .hero-bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,52 @@
+<section>
+  <div class="form">
+    <form [formGroup]="form" (ngSubmit)="send()">
+      <h2 id="textEditor_title">Form Validation</h2>
+
+      <label for="form_name">Name</label>
+      <input id="form_name" type="text" formControlName="name" placeholder="Name *" />
+      <small class="error" *ngIf="f.name.touched && f.name.errors">
+        <span *ngIf="f.name.errors['required']">Name is required.</span>
+        <span *ngIf="f.name.errors['pattern']">Letters and spaces only.</span>
+      </small>
+
+      <label for="form_email">Email</label>
+      <input id="form_email" type="email" formControlName="email" placeholder="Email *" />
+      <small class="error" *ngIf="f.email.touched && f.email.errors">
+        <span *ngIf="f.email.errors['required']">Email is required.</span>
+        <span *ngIf="f.email.errors['email']">Enter a valid email.</span>
+      </small>
+
+      <label for="form_number">Phone Number</label>
+      <input id="form_number" type="tel" formControlName="number" placeholder="Phone Number *" />
+      <small class="error" *ngIf="f.number.touched && f.number.errors">
+        <span *ngIf="f.number.errors['required']">Phone number is required.</span>
+        <span *ngIf="f.number.errors['pattern']">Digits only, min 10.</span>
+      </small>
+
+      <label for="form_pass">Password</label>
+      <input id="form_pass" type="password" formControlName="pass" placeholder="Password *" />
+      <small class="error" *ngIf="f.pass.touched && f.pass.errors">
+        <span *ngIf="f.pass.errors['required']">Password is required.</span>
+        <span *ngIf="f.pass.errors['pattern']">
+          At least 8 characters, include letters and numbers.
+        </span>
+      </small>
+
+      <label for="form_pass_c">Confirm Password</label>
+      <input id="form_pass_c" type="password" formControlName="pass_c" placeholder="Confirm Password *" />
+      <small class="error" *ngIf="(f.pass_c.touched && f.pass_c.errors) || (form.touched && form.errors?.passwordsDontMatch)">
+        <span *ngIf="f.pass_c.errors?.['required']">Please confirm your password.</span>
+        <span *ngIf="form.errors?.['passwordsDontMatch']">Passwords do not match.</span>
+      </small>
+
+      <button id="form_button" type="submit" [disabled]="form.invalid">Send Message</button>
+    </form>
+
+    <div id="submit_message" *ngIf="submitted">
+      <h2>Form Submitted</h2>
+      <p>Thank you for completing this form. This is for testing purposes; your information will not be saved.</p>
+      <button (click)="closeMessage()">Close</button>
+    </div>
+  </div>
+</section>

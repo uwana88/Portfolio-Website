@@ -1,0 +1,76 @@
+.form {
+    width: 60%;
+    padding: 80px 24px 24px;
+    align-content: center;
+    background-color: #aaa;
+    background-image: linear-gradient(to bottom, #666, #333);
+}
+
+.form form, .form #submit_message {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    background: #f8f9fa;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.form #submit_message {
+    text-align: center;
+    display: none;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.form label {
+    font-size: 0.8rem;
+    min-height: 1.2rem;
+}
+
+.form input {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border-color 0.2s;
+    margin: 0px 0px 0.8rem 0px;
+}
+
+.form input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.form button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 0;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 1.2rem;
+}
+
+.form button:hover {
+    background: #333;
+}
+
+.form button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 767px) {
+    .form {
+        width: 100%;
+    }
+}

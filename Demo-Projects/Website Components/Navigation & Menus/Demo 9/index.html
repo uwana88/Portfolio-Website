@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Minimal Navbar</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="black-navbar" id="blackNavbar">
+        <div class="navbar-content">
+            <!-- Brand/Logo -->
+            <div class="navbar-brand">
+                <a href="#" class="brand-link">
+                    <div class="brand-mark">
+                        <div class="mark-square"></div>
+                        <div class="mark-dot"></div>
+                    </div>
+                    <span class="brand-text">Minimal</span>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <span class="nav-label">Home</span>
+                    <div class="nav-line"></div>
+                </a>
+                
+                <a href="#" class="nav-item">
+                    <span class="nav-label">Work</span>
+                    <div class="nav-line"></div>
+                </a>
+                
+                <a href="#" class="nav-item">
+                    <span class="nav-label">About</span>
+                    <div class="nav-line"></div>
+                </a>
+                
+                <a href="#" class="nav-item">
+                    <span class="nav-label">Journal</span>
+                    <div class="nav-line"></div>
+                </a>
+                
+                <a href="#" class="nav-item">
+                    <span class="nav-label">Contact</span>
+                    <div class="nav-line"></div>
+                </a>
+            </div>
+
+            <!-- Right Section -->
+            <div class="navbar-actions">
+                <button class="action-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <div class="theme-icon">
+                        <div class="icon-circle"></div>
+                        <div class="icon-rays">
+                            <span class="ray"></span>
+                            <span class="ray"></span>
+                            <span class="ray"></span>
+                            <span class="ray"></span>
+                        </div>
+                    </div>
+                </button>
+                
+                <button class="action-btn menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <div class="menu-lines">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile/Overlay Menu -->
+        <div class="overlay-menu" id="overlayMenu">
+            <div class="overlay-content">
+                <!-- Menu Header -->
+                <div class="overlay-header">
+                    <div class="overlay-brand">
+                        <div class="brand-mark">
+                            <div class="mark-square"></div>
+                            <div class="mark-dot"></div>
+                        </div>
+                        <span class="brand-text">Minimal</span>
+                    </div>
+                    
+                    <button class="overlay-close" id="overlayClose" aria-label="Close menu">
+                        <div class="close-icon">
+                            <span class="close-line"></span>
+                            <span class="close-line"></span>
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- Menu Navigation -->
+                <div class="overlay-nav">
+                    <div class="overlay-links">
+                        <a href="#" class="overlay-link active">
+                            <span class="link-number">01</span>
+                            <span class="link-text">Home</span>
+                            <div class="link-underline"></div>
+                        </a>
+                        
+                        <a href="#" class="overlay-link">
+                            <span class="link-number">02</span>
+                            <span class="link-text">Work</span>
+                            <div class="link-underline"></div>
+                        </a>
+                        
+                        <a href="#" class="overlay-link">
+                            <span class="link-number">03</span>
+                            <span class="link-text">About</span>
+                            <div class="link-underline"></div>
+                        </a>
+                        
+                        <a href="#" class="overlay-link">
+                            <span class="link-number">04</span>
+                            <span class="link-text">Journal</span>
+                            <div class="link-underline"></div>
+                        </a>
+                        
+                        <a href="#" class="overlay-link">
+                            <span class="link-number">05</span>
+                            <span class="link-text">Contact</span>
+                            <div class="link-underline"></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Menu Footer -->
+                <div class="overlay-footer">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Get in touch</h4>
+                        <div class="footer-links">
+                            <a href="#" class="footer-link">hello@minimal.com</a>
+                            <a href="#" class="footer-link">+1 (555) 123-4567</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Follow</h4>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <span class="social-text">Instagram</span>
+                                <div class="social-line"></div>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <span class="social-text">Twitter</span>
+                                <div class="social-line"></div>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <span class="social-text">LinkedIn</span>
+                                <div class="social-line"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Background overlay -->
+            <div class="overlay-bg" id="overlayBg"></div>
+        </div>
+
+        <!-- Theme selector -->
+        <div class="theme-selector" id="themeSelector">
+            <div class="theme-options">
+                <button class="theme-option active" data-theme="dark">
+                    <div class="theme-preview dark-preview"></div>
+                    <span class="theme-name">Dark</span>
+                </button>
+                
+                <button class="theme-option" data-theme="light">
+                    <div class="theme-preview light-preview"></div>
+                    <span class="theme-name">Light</span>
+                </button>
+                
+                <button class="theme-option" data-theme="auto">
+                    <div class="theme-preview auto-preview"></div>
+                    <span class="theme-name">Auto</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

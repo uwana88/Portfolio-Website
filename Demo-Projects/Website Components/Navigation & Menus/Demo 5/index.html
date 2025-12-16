@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Menu Navbar</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="mega-navbar">
+        <div class="navbar-container">
+            <!-- Logo/Brand -->
+            <div class="navbar-brand">
+                <a href="#" class="brand-link">
+                    <div class="brand-logo">
+                        <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="10" fill="#2563EB"/>
+                            <path d="M12 14h16v2H12v-2zm0 4h16v2H12v-2zm0 4h12v2H12v-2z" fill="white"/>
+                            <circle cx="30" cy="10" r="4" fill="#EF4444"/>
+                        </svg>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">MegaNav</span>
+                        <span class="brand-tagline">Enterprise Solutions</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <div class="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    
+                    <li class="nav-item has-mega-menu" id="productsMenu">
+                        <a href="#" class="nav-link">
+                            Products
+                            <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none">
+                                <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        
+                        <!-- Mega Menu -->
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-content">
+                                    <div class="mega-column">
+                                        <h3 class="mega-title">Web Solutions</h3>
+                                        <ul class="mega-links">
+                                            <li>
+                                                <a href="#" class="mega-link">
+                                                    <div class="mega-link-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                                            <polygon points="10,8 16,12 10,16" fill="currentColor"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="mega-link-content">
+                                                        <strong>Website Builder</strong>
+                                                        <span>Create stunning websites with drag-and-drop</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="mega-link">
+                                                    <div class="mega-link-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                                            <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                                                            <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="mega-link-content">
+                                                        <strong>Web Hosting</strong>
+                                                        <span>Fast, reliable hosting solutions</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="mega-link">
+                                                    <div class="mega-link-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="mega-link-content">
+                                                        <strong>Domain Names</strong>
+                                                        <span>Find the perfect domain for your brand</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mega-column">
+                                        <h3 class="mega-title">E-commerce</h3>
+                                        <ul class="mega-links">
+                                            <li>
+                                                <a href="#" class="mega-link">
+                                                    <div class="mega-link-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+                                                            <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+                                                            <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="mega-link-content">
+                                                        <strong>Online Store</strong>
+                                                        <span>Complete e-commerce solution</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="mega-link">
+                                                    <div class="mega-link-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                                            <line x1="1" y1="10" x2="23" y2="10" stroke="currentColor" stroke-width="2"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="mega-link-content">
+                                                        <strong>Payment Gateway</strong>
+                                                        <span>Secure payment processing</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="mega-link">
+                                                    <div class="mega-link-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2" stroke="currentColor" stroke-width="2"/>
+                                                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" stroke="currentColor" stroke-width="2"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="mega-link-content">
+                                                        <strong>Inventory</strong>
+                                                        <span>Manage your products efficiently</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mega-column">
+                                        <h3 class="mega-title">Marketing</h3>
+                                        <ul class="mega-links">
+                                            <li>
+                                                <a href="#" class="mega-link">
+                                                    <div class="mega-link-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                                                            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="mega-link-content">
+                                                        <strong>Email Marketing</strong>
+                                                        <span>Automated email campaigns</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="mega-link">
+                                                    <div class="mega-link-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <line x1="22" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
+                                                            <path d="M22 6H2l10 6 10-6z" stroke="currentColor" stroke-width="2"/>
+                                                            <path d="M2 6l10 6 10-6v10a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" stroke="currentColor" stroke-width="2"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="mega-link-content">
+                                                        <strong>SEO Tools</strong>
+                                                        <span>Optimize for search engines</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="mega-link">
+                                                    <div class="mega-link-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="mega-link-content">
+                                                        <strong>Analytics</strong>
+                                                        <span>Track performance and insights</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mega-featured">
+                                        <div class="featured-card">
+                                            <div class="featured-badge">New</div>
+                                            <h4>AI Website Generator</h4>
+                                            <p>Create professional websites using artificial intelligence. Just describe your business and get a complete website in minutes.</p>
+                                            <a href="#" class="featured-cta">
+                                                Try for Free
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                                    <polyline points="9,18 15,12 9,6" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-mega-menu" id="servicesMenu">
+                        <a href="#" class="nav-link">
+                            Services
+                            <svg class="nav-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none">
+                                <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        
+                        <!-- Services Mega Menu -->
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-content services-menu">
+                                    <div class="mega-column">
+                                        <h3 class="mega-title">Development</h3>
+                                        <ul class="mega-links">
+                                            <li><a href="#" class="mega-link-simple">Custom Development</a></li>
+                                            <li><a href="#" class="mega-link-simple">API Integration</a></li>
+                                            <li><a href="#" class="mega-link-simple">Mobile Apps</a></li>
+                                            <li><a href="#" class="mega-link-simple">Web Applications</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mega-column">
+                                        <h3 class="mega-title">Design</h3>
+                                        <ul class="mega-links">
+                                            <li><a href="#" class="mega-link-simple">UI/UX Design</a></li>
+                                            <li><a href="#" class="mega-link-simple">Brand Identity</a></li>
+                                            <li><a href="#" class="mega-link-simple">Graphics Design</a></li>
+                                            <li><a href="#" class="mega-link-simple">Prototyping</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mega-column">
+                                        <h3 class="mega-title">Consulting</h3>
+                                        <ul class="mega-links">
+                                            <li><a href="#" class="mega-link-simple">Strategy Planning</a></li>
+                                            <li><a href="#" class="mega-link-simple">Technical Audit</a></li>
+                                            <li><a href="#" class="mega-link-simple">Performance Review</a></li>
+                                            <li><a href="#" class="mega-link-simple">Security Assessment</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="navbar-actions">
+                <button class="search-toggle" id="searchToggle" aria-label="Search">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+                
+                <a href="#" class="demo-btn">Request Demo</a>
+                
+                <a href="#" class="cta-btn">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-navigation" id="mobileNav">
+            <div class="mobile-nav-content">
+                <div class="mobile-nav-header">
+                    <div class="mobile-brand">
+                        <div class="brand-logo">
+                            <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                                <rect width="40" height="40" rx="10" fill="#2563EB"/>
+                                <path d="M12 14h16v2H12v-2zm0 4h16v2H12v-2zm0 4h12v2H12v-2z" fill="white"/>
+                                <circle cx="30" cy="10" r="4" fill="#EF4444"/>
+                            </svg>
+                        </div>
+                        <span class="mobile-brand-name">MegaNav</span>
+                    </div>
+                </div>
+                
+                <div class="mobile-nav-menu">
+                    <a href="#" class="mobile-nav-link active">Home</a>
+                    
+                    <div class="mobile-dropdown" id="mobileProductsDropdown">
+                        <button class="mobile-dropdown-trigger" id="mobileProductsTrigger">
+                            Products
+                            <svg class="mobile-dropdown-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <div class="mobile-dropdown-content" id="mobileProductsContent">
+                            <a href="#" class="mobile-dropdown-link">Website Builder</a>
+                            <a href="#" class="mobile-dropdown-link">Web Hosting</a>
+                            <a href="#" class="mobile-dropdown-link">Domain Names</a>
+                            <a href="#" class="mobile-dropdown-link">Online Store</a>
+                            <a href="#" class="mobile-dropdown-link">Payment Gateway</a>
+                            <a href="#" class="mobile-dropdown-link">Email Marketing</a>
+                        </div>
+                    </div>
+                    
+                    <div class="mobile-dropdown" id="mobileServicesDropdown">
+                        <button class="mobile-dropdown-trigger" id="mobileServicesTrigger">
+                            Services
+                            <svg class="mobile-dropdown-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <div class="mobile-dropdown-content" id="mobileServicesContent">
+                            <a href="#" class="mobile-dropdown-link">Custom Development</a>
+                            <a href="#" class="mobile-dropdown-link">UI/UX Design</a>
+                            <a href="#" class="mobile-dropdown-link">Strategy Planning</a>
+                            <a href="#" class="mobile-dropdown-link">Technical Audit</a>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="mobile-nav-link">About</a>
+                    <a href="#" class="mobile-nav-link">Contact</a>
+                </div>
+                
+                <div class="mobile-nav-footer">
+                    <div class="mobile-actions">
+                        <a href="#" class="mobile-demo-btn">Request Demo</a>
+                        <a href="#" class="mobile-cta-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <div class="search-box">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <input type="text" placeholder="Search products, services..." class="search-input" id="searchInput">
+                    <button class="search-close" id="searchClose" aria-label="Close search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2"/>
+                            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

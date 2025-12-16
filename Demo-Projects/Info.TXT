@@ -1,0 +1,31 @@
+1. Navigation & Menus
+Headers, navbars, sidebars, breadcrumbs, pagination, tabs
+
+2. Hero & Landing Sections
+Hero banners, call-to-action sections, feature highlights, intro sections
+
+3. Content Display & Layout
+Cards, grids, lists, tables, accordions, tabs content areas
+
+4. Forms & Input Controls
+Input fields, buttons, dropdowns, checkboxes, form layouts, validation states
+
+5. Media & Visual Elements
+Image galleries, carousels, video players, avatars, icons, badges
+
+6. Data Visualization & Charts
+Charts, graphs, progress indicators, statistics displays, dashboards
+
+7. Feedback & Notifications
+Alerts, toasts, modals, tooltips, loading states, error messages
+
+8. E-commerce & Pricing
+Product cards, pricing tables, shopping carts, checkout flows, reviews
+
+9. Social & Community Features
+User profiles, comments, testimonials, team sections, social proof
+
+10. Interactive & Dynamic Elements
+Animations, hover effects, toggles, sliders, drag-and-drop, search interfaces
+
+11. Side Navigation

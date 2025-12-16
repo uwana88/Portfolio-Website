@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Gradient Hero with Particles</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Hero Section Container -->
+    <section class="hero-section" id="hero">
+        <!-- Animated Background -->
+        <div class="hero-background">
+            <!-- Gradient Overlay -->
+            <div class="gradient-overlay"></div>
+            
+            <!-- Particle Canvas -->
+            <canvas class="particle-canvas" id="particleCanvas"></canvas>
+            
+            <!-- Floating Shapes -->
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="content-wrapper">
+                <!-- Badge/Tag -->
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span class="badge-text">New Release</span>
+                    <span class="badge-version">v2.0</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="hero-title">
+                    <span class="title-line">Build Something</span>
+                    <span class="title-line gradient-text">Extraordinary</span>
+                    <span class="title-line">With Our Platform</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="hero-subtitle">
+                    Transform your ideas into reality with our cutting-edge tools and 
+                    innovative solutions. Join thousands of creators who are already 
+                    building the future.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta-group">
+                    <button class="btn btn-primary">
+                        <span class="btn-text">Get Started Free</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <span class="btn-icon">▶</span>
+                        <span class="btn-text">Watch Demo</span>
+                    </button>
+                </div>
+
+                <!-- Stats/Social Proof -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-suffix">K+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="99">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="24">0</span>
+                        <span class="stat-suffix">/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="hero-trust">
+                    <p class="trust-text">Trusted by teams at</p>
+                    <div class="trust-logos">
+                        <div class="logo-item">Company 1</div>
+                        <div class="logo-item">Company 2</div>
+                        <div class="logo-item">Company 3</div>
+                        <div class="logo-item">Company 4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Visual/Image -->
+        <div class="hero-visual">
+            <div class="visual-wrapper">
+                <!-- Mockup/Dashboard Preview -->
+                <div class="mockup-container">
+                    <div class="mockup-browser">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="browser-address">dashboard.example.com</div>
+                        </div>
+                        <div class="browser-content">
+                            <!-- Dashboard Elements -->
+                            <div class="dashboard-header"></div>
+                            <div class="dashboard-grid">
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Elements -->
+                <div class="floating-card card-1">
+                    <div class="card-icon">📊</div>
+                    <div class="card-text">Real-time Analytics</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">🔒</div>
+                    <div class="card-text">Enterprise Security</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-text">Lightning Fast</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Additional Content for Scroll Demo -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2>Next Section</h2>
+            <p>This is where your next content would go...</p>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

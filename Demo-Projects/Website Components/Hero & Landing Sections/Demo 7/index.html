@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Typography Hero with Liquid Morphing Effect</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Liquid Typography Hero -->
+    <section class="liquid-hero" id="liquidHero">
+        <!-- Liquid Background -->
+        <div class="liquid-background">
+            <canvas id="liquidCanvas"></canvas>
+            <div class="liquid-overlay"></div>
+        </div>
+
+        <!-- Blob Elements -->
+        <div class="blob-container">
+            <div class="blob blob-1">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                    <path class="blob-path" d="" fill="url(#gradient1)"></path>
+                    <defs>
+                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.8" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.8" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="blob blob-2">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                    <path class="blob-path" d="" fill="url(#gradient2)"></path>
+                    <defs>
+                        <linearGradient id="gradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#f093fb;stop-opacity:0.8" />
+                            <stop offset="100%" style="stop-color:#f5576c;stop-opacity:0.8" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="blob blob-3">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                    <path class="blob-path" d="" fill="url(#gradient3)"></path>
+                    <defs>
+                        <linearGradient id="gradient3" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#4facfe;stop-opacity:0.8" />
+                            <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:0.8" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="liquid-header">
+            <div class="header-container">
+                <!-- Logo -->
+                <div class="liquid-logo">
+                    <div class="logo-liquid">
+                        <span class="logo-char">L</span>
+                        <span class="logo-char">I</span>
+                        <span class="logo-char">Q</span>
+                        <span class="logo-char">U</span>
+                        <span class="logo-char">I</span>
+                        <span class="logo-char">D</span>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="liquid-nav">
+                    <a href="#" class="nav-link liquid-link">
+                        <span data-text="Work">Work</span>
+                    </a>
+                    <a href="#" class="nav-link liquid-link">
+                        <span data-text="Studio">Studio</span>
+                    </a>
+                    <a href="#" class="nav-link liquid-link">
+                        <span data-text="Contact">Contact</span>
+                    </a>
+                </nav>
+
+                <!-- Menu Button -->
+                <button class="liquid-menu-btn" id="menuBtn">
+                    <div class="menu-liquid">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="hero-main">
+            <!-- Typography Section -->
+            <div class="typography-container">
+                <!-- Animated Badge -->
+                <div class="liquid-badge">
+                    <div class="badge-liquid"></div>
+                    <span class="badge-text">Creative Studio 2024</span>
+                </div>
+
+                <!-- Main Typography -->
+                <h1 class="liquid-title" id="liquidTitle">
+                    <div class="title-row">
+                        <span class="title-word">
+                            <span class="char" data-char="W">W</span>
+                            <span class="char" data-char="e">e</span>
+                        </span>
+                        <span class="title-word">
+                            <span class="char" data-char="C">C</span>
+                            <span class="char" data-char="r">r</span>
+                            <span class="char" data-char="e">e</span>
+                            <span class="char" data-char="a">a</span>
+                            <span class="char" data-char="t">t</span>
+                            <span class="char" data-char="e">e</span>
+                        </span>
+                    </div>
+                    <div class="title-row">
+                        <span class="title-word outline-word">
+                            <span class="char" data-char="L">L</span>
+                            <span class="char" data-char="i">i</span>
+                            <span class="char" data-char="q">q</span>
+                            <span class="char" data-char="u">u</span>
+                            <span class="char" data-char="i">i</span>
+                            <span class="char" data-char="d">d</span>
+                        </span>
+                    </div>
+                    <div class="title-row">
+                        <span class="title-word gradient-word">
+                            <span class="char" data-char="E">E</span>
+                            <span class="char" data-char="x">x</span>
+                            <span class="char" data-char="p">p</span>
+                            <span class="char" data-char="e">e</span>
+                            <span class="char" data-char="r">r</span>
+                            <span class="char" data-char="i">i</span>
+                            <span class="char" data-char="e">e</span>
+                            <span class="char" data-char="n">n</span>
+                            <span class="char" data-char="c">c</span>
+                            <span class="char" data-char="e">e</span>
+                            <span class="char" data-char="s">s</span>
+                        </span>
+                    </div>
+                </h1>
+
+                <!-- Subtitle with Typing Effect -->
+                <div class="liquid-subtitle">
+                    <span class="subtitle-static">Transforming ideas into</span>
+                    <span class="subtitle-dynamic">
+                        <span class="dynamic-word active">fluid motion</span>
+                        <span class="dynamic-word">living art</span>
+                        <span class="dynamic-word">digital magic</span>
+                        <span class="dynamic-word">pure emotion</span>
+                    </span>
+                </div>
+
+                <!-- CTA Group -->
+                <div class="liquid-cta-group">
+                    <button class="liquid-btn primary">
+                        <span class="btn-text">Start Project</span>
+                        <div class="btn-liquid"></div>
+                    </button>
+                    <button class="liquid-btn secondary">
+                        <span class="btn-text">View Works</span>
+                        <div class="btn-border"></div>
+                    </button>
+                </div>
+
+                <!-- Metrics -->
+                <div class="liquid-metrics">
+                    <div class="metric">
+                        <div class="metric-value">
+                            <span class="metric-number" data-value="127">0</span>
+                            <span class="metric-suffix">+</span>
+                        </div>
+                        <span class="metric-label">Projects</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric">
+                        <div class="metric-value">
+                            <span class="metric-number" data-value="98">0</span>
+                            <span class="metric-suffix">%</span>
+                        </div>
+                        <span class="metric-label">Satisfaction</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric">
+                        <div class="metric-value">
+                            <span class="metric-number" data-value="15">0</span>
+                            <span class="metric-suffix">+</span>
+                        </div>
+                        <span class="metric-label">Awards</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Elements -->
+            <div class="side-elements">
+                <!-- Floating Cards -->
+                <div class="float-card card-1">
+                    <div class="card-liquid"></div>
+                    <div class="card-content">
+                        <span class="card-icon">✨</span>
+                        <span class="card-text">Award Winner</span>
+                    </div>
+                </div>
+
+                <div class="float-card card-2">
+                    <div class="card-liquid"></div>
+                    <div class="card-content">
+                        <span class="card-icon">🎨</span>
+                        <span class="card-text">Creative Design</span>
+                    </div>
+                </div>
+
+                <div class="float-card card-3">
+                    <div class="card-liquid"></div>
+                    <div class="card-content">
+                        <span class="card-icon">⚡</span>
+                        <span class="card-text">Fast Delivery</span>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="liquid-scroll">
+                    <div class="scroll-text">Scroll</div>
+                    <div class="scroll-line">
+                        <div class="scroll-liquid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="hero-bottom">
+            <!-- Social Links -->
+            <div class="liquid-social">
+                <a href="#" class="social-link">
+                    <span class="social-text">Behance</span>
+                    <div class="social-liquid"></div>
+                </a>
+                <a href="#" class="social-link">
+                    <span class="social-text">Dribbble</span>
+                    <div class="social-liquid"></div>
+                </a>
+                <a href="#" class="social-link">
+                    <span class="social-text">Instagram</span>
+                    <div class="social-liquid"></div>
+                </a>
+            </div>
+
+            <!-- Play Button -->
+            <button class="liquid-play" id="playBtn">
+                <div class="play-circle">
+                    <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" fill="currentColor"/>
+                    </svg>
+                    <div class="play-liquid"></div>
+                </div>
+                <span class="play-text">Watch Reel</span>
+            </button>
+
+            <!-- Contact Info -->
+            <div class="liquid-contact">
+                <a href="mailto:hello@liquid.studio" class="contact-link">
+                    hello@liquid.studio
+                </a>
+            </div>
+        </div>
+
+        <!-- Magnetic Cursor -->
+        <div class="magnetic-cursor">
+            <div class="cursor-inner"></div>
+            <div class="cursor-outer"></div>
+        </div>
+
+        <!-- Liquid Menu Overlay -->
+        <div class="liquid-menu-overlay" id="menuOverlay">
+            <div class="menu-background">
+                <div class="menu-liquid-bg"></div>
+            </div>
+            <nav class="menu-nav">
+                <a href="#" class="menu-link">
+                    <span class="link-number">01</span>
+                    <span class="link-text">Home</span>
+                    <div class="link-liquid"></div>
+                </a>
+                <a href="#" class="menu-link">
+                    <span class="link-number">02</span>
+                    <span class="link-text">Works</span>
+                    <div class="link-liquid"></div>
+                </a>
+                <a href="#" class="menu-link">
+                    <span class="link-number">03</span>
+                    <span class="link-text">About</span>
+                    <div class="link-liquid"></div>
+                </a>
+                <a href="#" class="menu-link">
+                    <span class="link-number">04</span>
+                    <span class="link-text">Contact</span>
+                    <div class="link-liquid"></div>
+                </a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Next Section -->
+    <section class="next-section">
+        <div class="section-wrapper">
+            <h2>Continue Exploring</h2>
+            <p>Dive deeper into our liquid world...</p>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
