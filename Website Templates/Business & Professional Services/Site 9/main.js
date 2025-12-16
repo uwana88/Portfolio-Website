@@ -534,10 +534,10 @@ document.addEventListener('DOMContentLoaded', function () {
             if (overlay) {
                 overlay.style.background = `
                     linear-gradient(45deg, 
-                        rgba(139, 92, 246, 0.9), 
-                        rgba(236, 72, 153, 0.9), 
-                        rgba(59, 130, 246, 0.9),
-                        rgba(249, 115, 22, 0.9))
+                        rgba(139, 92, 246, 0.5), 
+                        rgba(236, 72, 153, 0.5), 
+                        rgba(59, 130, 246, 0.5),
+                        rgba(249, 115, 22, 0.5))
                 `;
                 overlay.style.backgroundSize = '400% 400%';
                 overlay.style.animation = 'gradientShift 2s ease infinite';

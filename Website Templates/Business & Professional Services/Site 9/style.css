@@ -241,11 +241,14 @@ h6 {
     color: var(--white) !important;
     padding: 0.8rem 1.8rem;
     border-radius: 25px;
+    text-decoration: none;
     font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow-glow);
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-glow);
+    border: none;
+    cursor: pointer;
 }
 
 .nav-cta::after {
@@ -745,7 +748,7 @@ h6 {
             rgba(139, 92, 246, 0.8),
             rgba(236, 72, 153, 0.8),
             rgba(59, 130, 246, 0.8));
-    opacity: 0.7;
+    opacity: 0.3;
     transition: opacity 0.3s ease;
 }
 
@@ -835,6 +838,8 @@ h6 {
 
 .portfolio-cta {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-outline {
@@ -866,9 +871,9 @@ h6 {
 }
 
 .btn-outline:hover {
+    transform: translateY(-3px);
     color: var(--white);
     border-color: transparent;
-    transform: translateY(-3px);
 }
 
 /* Services Section */
@@ -1173,6 +1178,16 @@ h6 {
     height: 100%;
     background: var(--gradient-primary);
     position: relative;
+}
+
+.toHide{
+    display: none;
+}
+
+@media (min-width: 1440px) {
+    .toHide{
+        display: block;
+    }
 }
 
 .photo-overlay {

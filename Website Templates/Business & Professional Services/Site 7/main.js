@@ -75,24 +75,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // Mock property images for demonstration
     const propertyImages = {
         0: [ // Featured large property
-            'linear-gradient(135deg, #2c3e50, #3498db)',
-            'linear-gradient(135deg, #8e44ad, #9b59b6)',
-            'linear-gradient(135deg, #27ae60, #2ecc71)'
+            'url(img/a1.jpg) bottom / cover no-repeat',
+            'url(img/a2.jpg) bottom / cover no-repeat',
+            'url(img/a3.jpg) bottom / cover no-repeat'
         ],
         1: [ // Manhattan Penthouse
-            'linear-gradient(135deg, #e74c3c, #c0392b)',
-            'linear-gradient(135deg, #f39c12, #e67e22)',
-            'linear-gradient(135deg, #34495e, #2c3e50)'
+            'url(img/2.jpg) bottom / cover no-repeat'
         ],
         2: [ // Malibu Villa
-            'linear-gradient(135deg, #1abc9c, #16a085)',
-            'linear-gradient(135deg, #3498db, #2980b9)',
-            'linear-gradient(135deg, #9b59b6, #8e44ad)'
+            'url(img/3.jpg) bottom / cover no-repeat'
         ],
         3: [ // Aspen Retreat
-            'linear-gradient(135deg, #95a5a6, #7f8c8d)',
-            'linear-gradient(135deg, #ecf0f1, #bdc3c7)',
-            'linear-gradient(135deg, #34495e, #2c3e50)'
+            'url(img/4.jpg) bottom / cover no-repeat'
+        ],
+        4: [ // Aspen Retreat
+            'url(img/5.jpg) bottom / cover no-repeat'
         ]
     };
 

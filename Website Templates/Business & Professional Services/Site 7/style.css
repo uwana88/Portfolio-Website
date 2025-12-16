@@ -215,7 +215,7 @@ h6 {
             rgba(26, 35, 50, 0.8) 0%,
             rgba(44, 62, 80, 0.6) 50%,
             rgba(212, 175, 55, 0.3) 100%),
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="%23f8f9fa"/><circle cx="400" cy="200" r="300" fill="%23d4af37" opacity="0.1"/><circle cx="1500" cy="800" r="400" fill="%232c3e50" opacity="0.05"/><polygon points="800,100 1200,300 1000,700 600,500" fill="%23d4af37" opacity="0.08"/></svg>') center/cover;
+        url('img/m1.jpg') center/cover;
     z-index: -2;
 }
 
